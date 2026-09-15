@@ -1,0 +1,13 @@
+{
+	"admin/services/sendspin": {
+		"title": "Sendspin",
+		"action": {
+			"type": "view",
+			"path": "sendspin"
+		},
+		"depends": {
+			"acl": [ "luci-app-sendspin" ],
+			"uci": { "sendspin-cli": true }
+		}
+	}
+}

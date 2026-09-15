@@ -1,0 +1,19 @@
+{
+	"luci-app-sendspin": {
+		"description": "Grant access to Sendspin player status and configuration",
+		"read": {
+			"file": {
+				"/proc/asound/cards": [ "read" ],
+				"/proc/asound/pcm": [ "read" ],
+				"/usr/bin/sendspin-cli status --control-socket /var/run/sendspin-cli/*.sock": [ "exec" ]
+			},
+			"ubus": {
+				"service": [ "list" ]
+			},
+			"uci": [ "sendspin-cli" ]
+		},
+		"write": {
+			"uci": [ "sendspin-cli" ]
+		}
+	}
+}
