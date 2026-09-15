@@ -61,6 +61,33 @@ return baseclass.extend({
 		});
 	},
 
+	/*
+	 * Sends a control subcommand to a running player, e.g. control('main',
+	 * 'vol', 40), and rejects with the player's reply when it refuses.
+	 */
+	control(id, command, arg) {
+		const params = [ command ];
+
+		if (arg != null)
+			params.push(String(arg));
+
+		params.push('--control-socket', `/var/run/sendspin-cli/${id}.sock`);
+
+		return fs.exec('/usr/bin/sendspin-cli', params).then((res) => {
+			if (res?.code != 0)
+				throw new Error((res?.stderr || res?.stdout || '').trim() || _('Command failed'));
+
+			return res;
+		});
+	},
+
+	/* "21 (muted)" as { volume: 21, muted: true }, or null when unknown */
+	parseVolume(value) {
+		const m = /^(\d+)( \(muted\))?$/.exec(value ?? '');
+
+		return m ? { volume: +m[1], muted: m[2] != null } : null;
+	},
+
 	/* Label and value rows describing one player, for status tables */
 	describe(player) {
 		if (!player.enabled)

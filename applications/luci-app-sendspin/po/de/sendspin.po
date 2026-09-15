@@ -6,187 +6,251 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:47
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:113
 msgid "ALSA device to play through. A <code>hw:</code> device plays without resampling."
 msgstr "ALSA-Gerät für die Wiedergabe. Ein <code>hw:</code>-Gerät spielt ohne Resampling."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:38
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:104
 msgid "Advanced Settings"
 msgstr "Erweiterte Einstellungen"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:74
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:53
+msgid "All"
+msgstr "Alle"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:140
 msgid "Announce over mDNS"
 msgstr "Per mDNS bekanntgeben"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:60
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:126
 msgid "Audio kept buffered by the device, in milliseconds."
 msgstr "Vom Gerät gepufferte Audiodaten, in Millisekunden."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:59
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:125
 msgid "Buffer"
 msgstr "Puffer"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:107
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:134
 msgid "Card %d"
 msgstr "Karte %d"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:81
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:78
+msgid "Command failed"
+msgstr "Befehl fehlgeschlagen"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:147
 msgid "Connect to this server, as <code>host[:port]</code>, instead of waiting to be discovered."
 msgstr "Mit diesem Server verbinden, als <code>host[:port]</code>, statt darauf zu warten, gefunden zu werden."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:89
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:155
 msgid "Debug"
 msgstr "Debug"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:67
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:94
 msgid "Disabled"
 msgstr "Deaktiviert"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:40
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:106
 msgid "Enable"
 msgstr "Aktivieren"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:86
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:152
 msgid "Error"
 msgstr "Fehler"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:57
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:123
 msgid "Expected codec:rate:depth:channels, with codec flac, opus or pcm"
 msgstr "Erwartet wird Codec:Abtastrate:Bittiefe:Kanäle, mit dem Codec flac, opus oder pcm"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:53
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:119
 msgid "Format offered to the server first, as <code>codec:rate:depth:channels</code>, e.g. <code>flac:48000:16:2</code>. Empty offers every format the device accepts."
 msgstr "Format, das dem Server zuerst angeboten wird, als <code>Codec:Abtastrate:Bittiefe:Kanäle</code>, z. B. <code>flac:48000:16:2</code>. Leer werden alle Formate angeboten, die das Gerät akzeptiert."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:37
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:103
 msgid "General Settings"
 msgstr "Allgemeine Einstellungen"
 
 #: applications/luci-app-sendspin/root/usr/share/rpcd/acl.d/luci-app-sendspin.json:3
-msgid "Grant access to Sendspin player status and configuration"
-msgstr "Zugriff auf Status und Konfiguration des Sendspin-Players gewähren"
+msgid "Grant access to Sendspin player status, controls and configuration"
+msgstr "Zugriff auf Status, Steuerung und Konfiguration des Sendspin-Players gewähren"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:88
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:35
+msgid "Group volume"
+msgstr "Gruppenlautstärke"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:154
 msgid "Info"
 msgstr "Info"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:65
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:131
 msgid "Latency added after the device, such as by an amplifier, in milliseconds. Only a first-run default: a delay set from the server is remembered."
 msgstr "Latenz nach dem Gerät, etwa durch einen Verstärker, in Millisekunden. Nur ein Startwert: Eine vom Server gesetzte Verzögerung wird beibehalten."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:75
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:141
 msgid "Let a server discover the player. Ignored when a server address is set."
 msgstr "Erlaubt einem Server, den Player zu finden. Wird ignoriert, wenn eine Serveradresse gesetzt ist."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:84
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:150
 msgid "Log level"
 msgstr "Protokollstufe"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:77
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:43
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:42
+msgid "Mute"
+msgstr "Stummschalten"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:104
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:109
 msgid "Name"
 msgstr "Name"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:44
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:110
 msgid "Name the server shows for this player. Defaults to the host name."
 msgstr "Name, den der Server für diesen Player anzeigt. Standardmäßig der Hostname."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:9
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:28
+msgid "Next"
+msgstr "Weiter"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:70
 msgid "No player is configured."
 msgstr "Es ist kein Player konfiguriert."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:85
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:151
 msgid "None"
 msgstr "Keine"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:70
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:97
 msgid "Not running"
 msgstr "Nicht aktiv"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:82
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:51
+msgid "Off"
+msgstr "Aus"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:52
+msgid "One track"
+msgstr "Ein Titel"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:109
 msgid "Output"
 msgstr "Ausgabe"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:46
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:112
 msgid "Output device"
 msgstr "Ausgabegerät"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:67
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:70
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:73
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:26
+msgid "Pause"
+msgstr "Pause"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:26
+msgid "Play"
+msgstr "Wiedergabe"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:24
+msgid "Playback"
+msgstr "Steuerung"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:94
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:97
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:100
 msgid "Player"
 msgstr "Player"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:69
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:135
 msgid "Port"
 msgstr "Port"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:70
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:136
 msgid "Port the player listens on for the server."
 msgstr "Port, auf dem der Player auf den Server wartet."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:52
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:118
 msgid "Preferred format"
 msgstr "Bevorzugtes Format"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:73
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:25
+msgid "Previous"
+msgstr "Zurück"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:47
+msgid "Repeat"
+msgstr "Wiederholen"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:100
 msgid "Running, status unavailable"
 msgstr "Aktiv, Status nicht verfügbar"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:30
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:96
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/status/include/80_sendspin.js:6
 #: applications/luci-app-sendspin/root/usr/share/luci/menu.d/luci-app-sendspin.json:3
 msgid "Sendspin"
 msgstr "Sendspin"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:31
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:97
 msgid "Sendspin player: plays synchronized audio from a Sendspin server, such as Music Assistant, through a sound card connected to this device."
 msgstr "Sendspin-Player: spielt synchronisiertes Audio von einem Sendspin-Server wie Music Assistant über eine an dieses Gerät angeschlossene Soundkarte."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:78
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:105
 msgid "Server"
 msgstr "Server"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:80
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:146
 msgid "Server address"
 msgstr "Serveradresse"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:33
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:99
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:79
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:58
+msgid "Shuffle"
+msgstr "Zufallswiedergabe"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:106
 msgid "State"
 msgstr "Wiedergabe"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:93
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:159
 msgid "State directory"
 msgstr "Statusverzeichnis"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:64
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:130
 msgid "Static delay"
 msgstr "Feste Verzögerung"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:99
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:164
 msgid "Status"
 msgstr "Status"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:80
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:27
+msgid "Stop"
+msgstr "Stopp"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:15
+msgid "The player refused the command: %s"
+msgstr "Der Player hat den Befehl abgelehnt: %s"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:107
 msgid "Track"
 msgstr "Titel"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:90
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:42
+msgid "Unmute"
+msgstr "Stummschaltung aufheben"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:156
 msgid "Verbose"
 msgstr "Ausführlich"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:81
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:108
 msgid "Volume"
 msgstr "Lautstärke"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:87
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:153
 msgid "Warning"
 msgstr "Warnung"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:94
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:160
 msgid "Where volume, mute, static delay and the last server are kept. The default is in RAM: lost at reboot, but the flash is spared."
 msgstr "Speicherort für Lautstärke, Stummschaltung, feste Verzögerung und den letzten Server. Standardmäßig im RAM: geht beim Neustart verloren, schont aber den Flash-Speicher."

@@ -1,6 +1,6 @@
 {
 	"luci-app-sendspin": {
-		"description": "Grant access to Sendspin player status and configuration",
+		"description": "Grant access to Sendspin player status, controls and configuration",
 		"read": {
 			"file": {
 				"/proc/asound/cards": [ "read" ],
@@ -13,6 +13,17 @@
 			"uci": [ "sendspin-cli" ]
 		},
 		"write": {
+			"file": {
+				"/usr/bin/sendspin-cli play --control-socket /var/run/sendspin-cli/*.sock": [ "exec" ],
+				"/usr/bin/sendspin-cli pause --control-socket /var/run/sendspin-cli/*.sock": [ "exec" ],
+				"/usr/bin/sendspin-cli stop --control-socket /var/run/sendspin-cli/*.sock": [ "exec" ],
+				"/usr/bin/sendspin-cli next --control-socket /var/run/sendspin-cli/*.sock": [ "exec" ],
+				"/usr/bin/sendspin-cli prev --control-socket /var/run/sendspin-cli/*.sock": [ "exec" ],
+				"/usr/bin/sendspin-cli vol * --control-socket /var/run/sendspin-cli/*.sock": [ "exec" ],
+				"/usr/bin/sendspin-cli mute * --control-socket /var/run/sendspin-cli/*.sock": [ "exec" ],
+				"/usr/bin/sendspin-cli repeat * --control-socket /var/run/sendspin-cli/*.sock": [ "exec" ],
+				"/usr/bin/sendspin-cli shuffle * --control-socket /var/run/sendspin-cli/*.sock": [ "exec" ]
+			},
 			"uci": [ "sendspin-cli" ]
 		}
 	}
