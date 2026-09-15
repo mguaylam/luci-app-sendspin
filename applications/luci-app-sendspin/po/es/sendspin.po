@@ -1,0 +1,192 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:47
+msgid "ALSA device to play through. A <code>hw:</code> device plays without resampling."
+msgstr "Dispositivo ALSA para la reproducción. Un dispositivo <code>hw:</code> reproduce sin remuestreo."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:38
+msgid "Advanced Settings"
+msgstr "Configuración avanzada"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:74
+msgid "Announce over mDNS"
+msgstr "Anunciar por mDNS"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:60
+msgid "Audio kept buffered by the device, in milliseconds."
+msgstr "Audio que el dispositivo mantiene en el búfer, en milisegundos."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:59
+msgid "Buffer"
+msgstr "Búfer"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:107
+msgid "Card %d"
+msgstr "Tarjeta %d"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:81
+msgid "Connect to this server, as <code>host[:port]</code>, instead of waiting to be discovered."
+msgstr "Conectarse a este servidor, como <code>host[:port]</code>, en lugar de esperar a ser descubierto."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:89
+msgid "Debug"
+msgstr "Depuración"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:67
+msgid "Disabled"
+msgstr "Desactivado"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:40
+msgid "Enable"
+msgstr "Activar"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:86
+msgid "Error"
+msgstr "Error"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:57
+msgid "Expected codec:rate:depth:channels, with codec flac, opus or pcm"
+msgstr "Se espera códec:frecuencia:bits:canales, con el códec flac, opus o pcm"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:53
+msgid "Format offered to the server first, as <code>codec:rate:depth:channels</code>, e.g. <code>flac:48000:16:2</code>. Empty offers every format the device accepts."
+msgstr "Formato que se ofrece primero al servidor, como <code>códec:frecuencia:bits:canales</code>, p. ej. <code>flac:48000:16:2</code>. Vacío ofrece todos los formatos que acepta el dispositivo."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:37
+msgid "General Settings"
+msgstr "Configuración general"
+
+#: applications/luci-app-sendspin/root/usr/share/rpcd/acl.d/luci-app-sendspin.json:3
+msgid "Grant access to Sendspin player status and configuration"
+msgstr "Conceder acceso al estado y a la configuración del reproductor Sendspin"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:88
+msgid "Info"
+msgstr "Información"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:65
+msgid "Latency added after the device, such as by an amplifier, in milliseconds. Only a first-run default: a delay set from the server is remembered."
+msgstr "Latencia añadida después del dispositivo, por ejemplo por un amplificador, en milisegundos. Solo es un valor inicial: se conserva un retardo fijado desde el servidor."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:75
+msgid "Let a server discover the player. Ignored when a server address is set."
+msgstr "Permite que un servidor descubra el reproductor. Se ignora si se define una dirección de servidor."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:84
+msgid "Log level"
+msgstr "Nivel de registro"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:77
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:43
+msgid "Name"
+msgstr "Nombre"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:44
+msgid "Name the server shows for this player. Defaults to the host name."
+msgstr "Nombre que muestra el servidor para este reproductor. Por defecto, el nombre del host."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:9
+msgid "No player is configured."
+msgstr "No hay ningún reproductor configurado."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:85
+msgid "None"
+msgstr "Ninguno"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:70
+msgid "Not running"
+msgstr "Detenido"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:82
+msgid "Output"
+msgstr "Salida"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:46
+msgid "Output device"
+msgstr "Dispositivo de salida"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:67
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:70
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:73
+msgid "Player"
+msgstr "Reproductor"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:69
+msgid "Port"
+msgstr "Puerto"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:70
+msgid "Port the player listens on for the server."
+msgstr "Puerto en el que el reproductor espera al servidor."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:52
+msgid "Preferred format"
+msgstr "Formato preferido"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:73
+msgid "Running, status unavailable"
+msgstr "En ejecución, estado no disponible"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:30
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/status/include/80_sendspin.js:6
+#: applications/luci-app-sendspin/root/usr/share/luci/menu.d/luci-app-sendspin.json:3
+msgid "Sendspin"
+msgstr "Sendspin"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:31
+msgid "Sendspin player: plays synchronized audio from a Sendspin server, such as Music Assistant, through a sound card connected to this device."
+msgstr "Reproductor Sendspin: reproduce audio sincronizado desde un servidor Sendspin, como Music Assistant, a través de una tarjeta de sonido conectada a este dispositivo."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:78
+msgid "Server"
+msgstr "Servidor"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:80
+msgid "Server address"
+msgstr "Dirección del servidor"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:33
+msgid "Settings"
+msgstr "Configuración"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:79
+msgid "State"
+msgstr "Reproducción"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:93
+msgid "State directory"
+msgstr "Directorio de estado"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:64
+msgid "Static delay"
+msgstr "Retardo fijo"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:99
+msgid "Status"
+msgstr "Estado"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:80
+msgid "Track"
+msgstr "Pista"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:90
+msgid "Verbose"
+msgstr "Detallado"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:81
+msgid "Volume"
+msgstr "Volumen"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:87
+msgid "Warning"
+msgstr "Advertencia"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:94
+msgid "Where volume, mute, static delay and the last server are kept. The default is in RAM: lost at reboot, but the flash is spared."
+msgstr "Dónde se guardan el volumen, el silencio, el retardo fijo y el último servidor. Por defecto en la RAM: se pierden al reiniciar, pero se preserva la memoria flash."
