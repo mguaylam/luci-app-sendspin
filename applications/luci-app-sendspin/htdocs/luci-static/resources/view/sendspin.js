@@ -2,18 +2,84 @@
 'require view';
 'require form';
 'require poll';
+'require ui';
 'require sendspin';
 
-function renderStatus(players) {
+/* Playback and group controls for a player connected to a server */
+function renderControls(player, refresh) {
+	const info = player.info;
+	const group = sendspin.parseVolume(info['group volume']);
+	const playing = info.state?.startsWith('playing');
+
+	const send = (command, arg) => sendspin.control(player.id, command, arg)
+		.catch((err) => ui.addNotification(null, E('p', {}, _('The player refused the command: %s').format(err.message)), 'error'))
+		.then(refresh);
+
+	const button = (label, command, arg) => E('button', {
+		'class': 'cbi-button cbi-button-action',
+		'click': ui.createHandlerFn(null, () => send(command, arg))
+	}, label);
+
+	const rows = [
+		[ _('Playback'), E('div', {}, [
+			button(_('Previous'), 'prev'), ' ',
+			playing ? button(_('Pause'), 'pause') : button(_('Play'), 'play'), ' ',
+			button(_('Stop'), 'stop'), ' ',
+			button(_('Next'), 'next')
+		]) ]
+	];
+
+	if (group) {
+		const value = E('span', {}, ` ${group.volume} `);
+
+		rows.push([ _('Group volume'), E('div', {}, [
+			E('input', {
+				'type': 'range', 'min': 0, 'max': 100, 'step': 1, 'value': group.volume,
+				'input': (ev) => value.textContent = ` ${ev.target.value} `,
+				'change': (ev) => send('vol', ev.target.value)
+			}),
+			value,
+			button(group.muted ? _('Unmute') : _('Mute'), 'mute', group.muted ? 'off' : 'on')
+		]) ]);
+	}
+
+	if ([ 'off', 'one', 'all' ].includes(info.repeat)) {
+		rows.push([ _('Repeat'), E('select', {
+			'class': 'cbi-input-select',
+			'change': (ev) => send('repeat', ev.target.value)
+		}, [
+			E('option', { 'value': 'off', 'selected': info.repeat == 'off' || null }, _('Off')),
+			E('option', { 'value': 'one', 'selected': info.repeat == 'one' || null }, _('One track')),
+			E('option', { 'value': 'all', 'selected': info.repeat == 'all' || null }, _('All'))
+		]) ]);
+	}
+
+	if ([ 'on', 'off' ].includes(info.shuffle)) {
+		rows.push([ _('Shuffle'), E('input', {
+			'type': 'checkbox',
+			'checked': info.shuffle == 'on' || null,
+			'change': (ev) => send('shuffle', ev.target.checked ? 'on' : 'off')
+		}) ]);
+	}
+
+	return rows;
+}
+
+function renderStatus(players, refresh) {
 	if (!players.length)
 		return E('em', {}, _('No player is configured.'));
 
-	return E('div', {}, players.map((player) => E('table', { 'class': 'table' },
-		sendspin.describe(player).map(([ label, value ]) => E('tr', { 'class': 'tr' }, [
+	return E('div', {}, players.map((player) => {
+		const rows = sendspin.describe(player);
+
+		if (player.info?.server?.endsWith('(connected)'))
+			rows.push(...renderControls(player, refresh));
+
+		return E('table', { 'class': 'table' }, rows.map(([ label, value ]) => E('tr', { 'class': 'tr' }, [
 			E('td', { 'class': 'td left', 'width': '33%' }, label),
 			E('td', { 'class': 'td left' }, value)
-		]))
-	)));
+		])));
+	}));
 }
 
 return view.extend({
@@ -95,14 +161,23 @@ return view.extend({
 		o.placeholder = '/var/lib/sendspin-cli';
 
 		/* Kept outside the map, which renders again after every save */
-		const status = E('div', { 'class': 'cbi-section' }, [
-			E('h3', {}, _('Status')),
-			E('div', {}, renderStatus(players))
-		]);
+		const status = E('div', { 'class': 'cbi-section' }, [ E('h3', {}, _('Status')), E('div') ]);
 
-		poll.add(() => sendspin.getPlayers().then((current) => {
-			status.lastElementChild.replaceChildren(renderStatus(current));
-		}), 5);
+		const refresh = () => sendspin.getPlayers().then((current) => {
+			status.lastElementChild.replaceChildren(renderStatus(current, refresh));
+		});
+
+		status.lastElementChild.appendChild(renderStatus(players, refresh));
+
+		/* Leave the controls alone while one is being used */
+		poll.add(() => {
+			const active = document.activeElement;
+
+			if (active && status.contains(active) && active.matches('input, select'))
+				return Promise.resolve();
+
+			return refresh();
+		}, 5);
 
 		return m.render().then((node) => {
 			node.querySelector('.cbi-map-descr')?.after(status);
