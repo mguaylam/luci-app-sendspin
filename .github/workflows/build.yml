@@ -1,0 +1,81 @@
+name: Build
+
+on:
+  # Branches are built through their pull request
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Check sources
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      # LuCI views are function bodies ending in a top-level return, so each
+      # file is compiled as one rather than as a script or module.
+      - name: JavaScript syntax
+        run: |
+          find applications -name '*.js' -print0 | xargs -0 -n1 node -e '
+            const file = process.argv[1];
+            new Function("_", "E", "L", require("fs").readFileSync(file, "utf8"));
+            console.log("ok " + file);
+          '
+
+      - name: JSON syntax
+        run: find applications -name '*.json' -print -exec python3 -m json.tool {} /dev/null \;
+
+      - name: Translations
+        run: |
+          sudo apt-get install -y gettext
+          for po in applications/*/po/*/*.po; do
+            [ "${po#*/po/templates/}" = "$po" ] || continue
+            pot="$(dirname "$(dirname "$po")")/templates/$(basename "$po" .po).pot"
+            msgfmt --check -o /dev/null "$po"
+            msgcmp "$po" "$pot"
+            echo "ok $po"
+          done
+
+  build:
+    name: Build ${{ matrix.release }}
+    needs: check
+    runs-on: ubuntu-latest
+    # Snapshot is what an openwrt/luci PR builds against; report it,
+    # but don't let a broken snapshot SDK fail the run.
+    continue-on-error: ${{ matrix.release == 'main' }}
+    strategy:
+      fail-fast: false
+      matrix:
+        release:
+          - 25.12.5
+          - main
+    steps:
+      - uses: actions/checkout@v7
+
+      # The app is architecture independent, so one target is enough.
+      - name: Build with the OpenWrt SDK
+        uses: openwrt/gh-action-sdk@v11
+        env:
+          ARCH: x86-64-${{ matrix.release }}
+          FEEDNAME: luci_sendspin
+          EXTRA_FEEDS: src-git|sendspin|https://github.com/mguaylam/openwrt-sendspin.git
+          PACKAGES: luci-app-sendspin
+
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: luci-app-sendspin-${{ matrix.release }}
+          path: |
+            bin/packages/*/luci_sendspin/*.apk
+            logs/
+          if-no-files-found: warn
