@@ -1,0 +1,260 @@
+msgid ""
+msgstr ""
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:113
+msgid "ALSA device to play through. A <code>hw:</code> device plays without resampling."
+msgstr "Пристрій ALSA для відтворення. Пристрій <code>hw:</code> відтворює без передискретизації."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:104
+msgid "Advanced Settings"
+msgstr "Додаткові налаштування"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:53
+msgid "All"
+msgstr "Усе"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:153
+msgid "Announce over mDNS"
+msgstr "Оголошувати через mDNS"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:139
+msgid "Audio kept buffered by the device, in milliseconds."
+msgstr "Обсяг звуку в буфері пристрою, у мілісекундах."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:138
+msgid "Buffer"
+msgstr "Буфер"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:134
+msgid "Card %d"
+msgstr "Карта %d"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:78
+msgid "Command failed"
+msgstr "Команду не виконано"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:160
+msgid "Connect to this server, as <code>host[:port]</code>, instead of waiting to be discovered."
+msgstr "Під'єднуватися до цього сервера, у вигляді <code>хост[:порт]</code>, замість очікування на виявлення."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:168
+msgid "Debug"
+msgstr "Зневадження"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:94
+msgid "Disabled"
+msgstr "Вимкнено"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:106
+msgid "Enable"
+msgstr "Увімкнути"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:165
+msgid "Error"
+msgstr "Помилка"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:128
+msgid "Expected a comma-separated list of codec:rate:depth:channels, with codec flac, opus or pcm"
+msgstr "Очікувався список через кому у вигляді кодек:частота:біти:канали, з кодеком flac, opus або pcm"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:119
+msgid "Formats offered to the server first, as a comma-separated list of <code>codec:rate:depth:channels</code>, e.g. <code>flac:48000:16:2,pcm:48000:16:2</code>. The device's other formats stay behind them, so this is a preference the server can fall back from, not a restriction. Empty offers every format the device accepts."
+msgstr "Формати, які пропонуються серверу першими, у вигляді списку через кому <code>кодек:частота:біти:канали</code>, наприклад <code>flac:48000:16:2,pcm:48000:16:2</code>. Решта форматів пристрою лишаються доступними після них, тож це перевага, від якої сервер може відступити, а не обмеження. Порожнє значення пропонує всі формати, які приймає пристрій."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:103
+msgid "General Settings"
+msgstr "Загальні налаштування"
+
+#: applications/luci-app-sendspin/root/usr/share/rpcd/acl.d/luci-app-sendspin.json:3
+msgid "Grant access to Sendspin player status, controls and configuration"
+msgstr "Надає доступ до стану, керування та налаштування програвача Sendspin"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:35
+msgid "Group volume"
+msgstr "Гучність групи"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:167
+msgid "Info"
+msgstr "Інформація"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:144
+msgid "Latency added after the device, such as by an amplifier, in milliseconds. Only a first-run default: a delay set from the server is remembered."
+msgstr "Затримка, додана після пристрою, наприклад підсилювачем, у мілісекундах. Лише початкове значення: затримку, задану сервером, буде запам'ятано."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:154
+msgid "Let a server discover the player. Ignored when a server address is set."
+msgstr "Дозволяє серверу виявити програвач. Ігнорується, якщо задано адресу сервера."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:163
+msgid "Log level"
+msgstr "Рівень журналу"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:42
+msgid "Mute"
+msgstr "Вимкнути звук"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:104
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:109
+msgid "Name"
+msgstr "Назва"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:110
+msgid "Name the server shows for this player. Defaults to the host name."
+msgstr "Назва, яку сервер показує для цього програвача. Типово — назва хоста."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:28
+msgid "Next"
+msgstr "Наступний"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:70
+msgid "No player is configured."
+msgstr "Програвач не налаштовано."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:164
+msgid "None"
+msgstr "Немає"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:97
+msgid "Not running"
+msgstr "Не запущено"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:51
+msgid "Off"
+msgstr "Вимкнено"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:52
+msgid "One track"
+msgstr "Один трек"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:109
+msgid "Output"
+msgstr "Вихід"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:112
+msgid "Output device"
+msgstr "Пристрій виведення"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:26
+msgid "Pause"
+msgstr "Пауза"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:26
+msgid "Play"
+msgstr "Відтворити"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:24
+msgid "Playback"
+msgstr "Відтворення"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:94
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:97
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:100
+msgid "Player"
+msgstr "Програвач"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:148
+msgid "Port"
+msgstr "Порт"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:149
+msgid "Port the player listens on for the server."
+msgstr "Порт, на якому програвач очікує сервер."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:118
+msgid "Preferred formats"
+msgstr "Бажані формати"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:25
+msgid "Previous"
+msgstr "Попередній"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:47
+msgid "Repeat"
+msgstr "Повторення"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:100
+msgid "Running, status unavailable"
+msgstr "Запущено, стан недоступний"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:96
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/status/include/80_sendspin.js:6
+#: applications/luci-app-sendspin/root/usr/share/luci/menu.d/luci-app-sendspin.json:3
+msgid "Sendspin"
+msgstr "Sendspin"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:97
+msgid "Sendspin player: plays synchronized audio from a Sendspin server, such as Music Assistant, through a sound card connected to this device."
+msgstr "Програвач Sendspin: відтворює синхронізований звук із сервера Sendspin, такого як Music Assistant, через звукову карту, під'єднану до цього пристрою."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:105
+msgid "Server"
+msgstr "Сервер"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:159
+msgid "Server address"
+msgstr "Адреса сервера"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:99
+msgid "Settings"
+msgstr "Налаштування"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:58
+msgid "Shuffle"
+msgstr "Випадковий порядок"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:106
+msgid "State"
+msgstr "Стан"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:172
+msgid "State directory"
+msgstr "Каталог стану"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:143
+msgid "Static delay"
+msgstr "Статична затримка"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:177
+msgid "Status"
+msgstr "Стан"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:27
+msgid "Stop"
+msgstr "Зупинити"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:15
+msgid "The player refused the command: %s"
+msgstr "Програвач відхилив команду: %s"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:107
+msgid "Track"
+msgstr "Трек"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:42
+msgid "Unmute"
+msgstr "Увімкнути звук"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:169
+msgid "Verbose"
+msgstr "Докладний"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:108
+msgid "Volume"
+msgstr "Гучність"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:166
+msgid "Warning"
+msgstr "Попередження"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:173
+msgid "Where volume, mute, static delay and the last server are kept. The default is in RAM: lost at reboot, but the flash is spared."
+msgstr "Де зберігаються гучність, вимкнення звуку, статична затримка та останній сервер. Типово в ОЗП: втрачаються при перезавантаженні, зате флеш-пам'ять не зношується."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:132
+msgid "opus is only accepted at 48000:16 with at most 2 channels"
+msgstr "opus приймається лише за 48000:16 і не більше ніж 2 канали"

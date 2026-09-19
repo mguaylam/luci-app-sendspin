@@ -32,8 +32,11 @@ sockets in `/var/run/sendspin-cli/`.
 Cover art is not shown: the Sendspin metadata carries an artwork URL, but
 `sendspin-cli status` does not print it.
 
-Translations: English, French, German and Spanish. None has been reviewed by
-a native speaker yet; corrections are welcome.
+Translations: English, plus Czech, Dutch, French, German, Italian, Japanese,
+Korean, Polish, Portuguese (Brazil), Russian, Simplified and Traditional
+Chinese, Spanish, Swedish, Turkish and Ukrainian. **None has been reviewed by
+a native speaker**; corrections are very welcome, and a pull request touching
+a single `po/<lang>/sendspin.po` is the easiest way to send one.
 
 ## Installing
 
