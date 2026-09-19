@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Language: de\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8,39 +8,39 @@ msgstr ""
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:113
 msgid "ALSA device to play through. A <code>hw:</code> device plays without resampling."
-msgstr "ALSA-Gerät für die Wiedergabe. Ein <code>hw:</code>-Gerät spielt ohne Resampling."
+msgstr "ALSA-apparaat om op af te spelen. Een <code>hw:</code>-apparaat speelt af zonder herbemonstering."
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:104
 msgid "Advanced Settings"
-msgstr "Erweiterte Einstellungen"
+msgstr "Geavanceerde instellingen"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:53
 msgid "All"
-msgstr "Alle"
+msgstr "Alles"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:153
 msgid "Announce over mDNS"
-msgstr "Per mDNS bekanntgeben"
+msgstr "Aankondigen via mDNS"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:139
 msgid "Audio kept buffered by the device, in milliseconds."
-msgstr "Vom Gerät gepufferte Audiodaten, in Millisekunden."
+msgstr "Audio die het apparaat gebufferd houdt, in milliseconden."
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:138
 msgid "Buffer"
-msgstr "Puffer"
+msgstr "Buffer"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:134
 msgid "Card %d"
-msgstr "Karte %d"
+msgstr "Kaart %d"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:78
 msgid "Command failed"
-msgstr "Befehl fehlgeschlagen"
+msgstr "Opdracht mislukt"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:160
 msgid "Connect to this server, as <code>host[:port]</code>, instead of waiting to be discovered."
-msgstr "Mit diesem Server verbinden, als <code>host[:port]</code>, statt darauf zu warten, gefunden zu werden."
+msgstr "Verbind met deze server, als <code>host[:poort]</code>, in plaats van te wachten tot je ontdekt wordt."
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:168
 msgid "Debug"
@@ -48,35 +48,35 @@ msgstr "Debug"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:94
 msgid "Disabled"
-msgstr "Deaktiviert"
+msgstr "Uitgeschakeld"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:106
 msgid "Enable"
-msgstr "Aktivieren"
+msgstr "Inschakelen"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:165
 msgid "Error"
-msgstr "Fehler"
+msgstr "Fout"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:128
 msgid "Expected a comma-separated list of codec:rate:depth:channels, with codec flac, opus or pcm"
-msgstr "Erwartet wird eine kommagetrennte Liste aus Codec:Abtastrate:Bittiefe:Kanäle, mit dem Codec flac, opus oder pcm"
+msgstr "Verwacht een door komma's gescheiden lijst van codec:frequentie:bits:kanalen, met codec flac, opus of pcm"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:119
 msgid "Formats offered to the server first, as a comma-separated list of <code>codec:rate:depth:channels</code>, e.g. <code>flac:48000:16:2,pcm:48000:16:2</code>. The device's other formats stay behind them, so this is a preference the server can fall back from, not a restriction. Empty offers every format the device accepts."
-msgstr "Formate, die dem Server zuerst angeboten werden, als kommagetrennte Liste von <code>Codec:Abtastrate:Bittiefe:Kanäle</code>, z. B. <code>flac:48000:16:2,pcm:48000:16:2</code>. Die übrigen Formate des Geräts bleiben dahinter erhalten; es ist also eine Präferenz, von der der Server abweichen kann, keine Einschränkung. Leer werden alle Formate angeboten, die das Gerät akzeptiert."
+msgstr "Formaten die als eerste aan de server worden aangeboden, als een door komma's gescheiden lijst van <code>codec:frequentie:bits:kanalen</code>, bijvoorbeeld <code>flac:48000:16:2,pcm:48000:16:2</code>. De overige formaten van het apparaat blijven daarachter beschikbaar; het is dus een voorkeur waarvan de server kan afwijken, geen beperking. Leeg biedt elk formaat aan dat het apparaat accepteert."
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:103
 msgid "General Settings"
-msgstr "Allgemeine Einstellungen"
+msgstr "Algemene instellingen"
 
 #: applications/luci-app-sendspin/root/usr/share/rpcd/acl.d/luci-app-sendspin.json:3
 msgid "Grant access to Sendspin player status, controls and configuration"
-msgstr "Zugriff auf Status, Steuerung und Konfiguration des Sendspin-Players gewähren"
+msgstr "Geeft toegang tot status, bediening en configuratie van de Sendspin-speler"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:35
 msgid "Group volume"
-msgstr "Gruppenlautstärke"
+msgstr "Groepsvolume"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:167
 msgid "Info"
@@ -84,102 +84,102 @@ msgstr "Info"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:144
 msgid "Latency added after the device, such as by an amplifier, in milliseconds. Only a first-run default: a delay set from the server is remembered."
-msgstr "Latenz nach dem Gerät, etwa durch einen Verstärker, in Millisekunden. Nur ein Startwert: Eine vom Server gesetzte Verzögerung wird beibehalten."
+msgstr "Vertraging die na het apparaat wordt toegevoegd, bijvoorbeeld door een versterker, in milliseconden. Alleen een beginwaarde: een door de server ingestelde vertraging wordt onthouden."
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:154
 msgid "Let a server discover the player. Ignored when a server address is set."
-msgstr "Erlaubt einem Server, den Player zu finden. Wird ignoriert, wenn eine Serveradresse gesetzt ist."
+msgstr "Laat een server de speler ontdekken. Genegeerd wanneer een serveradres is ingesteld."
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:163
 msgid "Log level"
-msgstr "Protokollstufe"
+msgstr "Logniveau"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:42
 msgid "Mute"
-msgstr "Stummschalten"
+msgstr "Dempen"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:104
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:109
 msgid "Name"
-msgstr "Name"
+msgstr "Naam"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:110
 msgid "Name the server shows for this player. Defaults to the host name."
-msgstr "Name, den der Server für diesen Player anzeigt. Standardmäßig der Hostname."
+msgstr "Naam die de server voor deze speler toont. Standaard de hostnaam."
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:28
 msgid "Next"
-msgstr "Weiter"
+msgstr "Volgende"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:70
 msgid "No player is configured."
-msgstr "Es ist kein Player konfiguriert."
+msgstr "Er is geen speler geconfigureerd."
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:164
 msgid "None"
-msgstr "Keine"
+msgstr "Geen"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:97
 msgid "Not running"
-msgstr "Nicht aktiv"
+msgstr "Draait niet"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:51
 msgid "Off"
-msgstr "Aus"
+msgstr "Uit"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:52
 msgid "One track"
-msgstr "Ein Titel"
+msgstr "Eén nummer"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:109
 msgid "Output"
-msgstr "Ausgabe"
+msgstr "Uitvoer"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:112
 msgid "Output device"
-msgstr "Ausgabegerät"
+msgstr "Uitvoerapparaat"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:26
 msgid "Pause"
-msgstr "Pause"
+msgstr "Pauzeren"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:26
 msgid "Play"
-msgstr "Wiedergabe"
+msgstr "Afspelen"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:24
 msgid "Playback"
-msgstr "Steuerung"
+msgstr "Weergave"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:94
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:97
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:100
 msgid "Player"
-msgstr "Player"
+msgstr "Speler"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:148
 msgid "Port"
-msgstr "Port"
+msgstr "Poort"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:149
 msgid "Port the player listens on for the server."
-msgstr "Port, auf dem der Player auf den Server wartet."
+msgstr "Poort waarop de speler naar de server luistert."
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:118
 msgid "Preferred formats"
-msgstr "Bevorzugte Formate"
+msgstr "Voorkeursformaten"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:25
 msgid "Previous"
-msgstr "Zurück"
+msgstr "Vorige"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:47
 msgid "Repeat"
-msgstr "Wiederholen"
+msgstr "Herhalen"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:100
 msgid "Running, status unavailable"
-msgstr "Aktiv, Status nicht verfügbar"
+msgstr "Draait, status niet beschikbaar"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:96
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/status/include/80_sendspin.js:6
@@ -189,7 +189,7 @@ msgstr "Sendspin"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:97
 msgid "Sendspin player: plays synchronized audio from a Sendspin server, such as Music Assistant, through a sound card connected to this device."
-msgstr "Sendspin-Player: spielt synchronisiertes Audio von einem Sendspin-Server wie Music Assistant über eine an dieses Gerät angeschlossene Soundkarte."
+msgstr "Sendspin-speler: speelt gesynchroniseerde audio af van een Sendspin-server, zoals Music Assistant, via een geluidskaart die op dit apparaat is aangesloten."
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:105
 msgid "Server"
@@ -197,27 +197,27 @@ msgstr "Server"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:159
 msgid "Server address"
-msgstr "Serveradresse"
+msgstr "Serveradres"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:99
 msgid "Settings"
-msgstr "Einstellungen"
+msgstr "Instellingen"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:58
 msgid "Shuffle"
-msgstr "Zufallswiedergabe"
+msgstr "Willekeurig"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:106
 msgid "State"
-msgstr "Wiedergabe"
+msgstr "Staat"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:172
 msgid "State directory"
-msgstr "Statusverzeichnis"
+msgstr "Statusmap"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:143
 msgid "Static delay"
-msgstr "Feste Verzögerung"
+msgstr "Statische vertraging"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:177
 msgid "Status"
@@ -225,36 +225,36 @@ msgstr "Status"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:27
 msgid "Stop"
-msgstr "Stopp"
+msgstr "Stoppen"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:15
 msgid "The player refused the command: %s"
-msgstr "Der Player hat den Befehl abgelehnt: %s"
+msgstr "De speler weigerde de opdracht: %s"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:107
 msgid "Track"
-msgstr "Titel"
+msgstr "Nummer"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:42
 msgid "Unmute"
-msgstr "Stummschaltung aufheben"
+msgstr "Dempen opheffen"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:169
 msgid "Verbose"
-msgstr "Ausführlich"
+msgstr "Uitgebreid"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:108
 msgid "Volume"
-msgstr "Lautstärke"
+msgstr "Volume"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:166
 msgid "Warning"
-msgstr "Warnung"
+msgstr "Waarschuwing"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:173
 msgid "Where volume, mute, static delay and the last server are kept. The default is in RAM: lost at reboot, but the flash is spared."
-msgstr "Speicherort für Lautstärke, Stummschaltung, feste Verzögerung und den letzten Server. Standardmäßig im RAM: geht beim Neustart verloren, schont aber den Flash-Speicher."
+msgstr "Waar volume, demping, statische vertraging en de laatste server worden bewaard. De standaard is in RAM: verloren bij herstarten, maar het flashgeheugen wordt gespaard."
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:132
 msgid "opus is only accepted at 48000:16 with at most 2 channels"
-msgstr "opus wird nur mit 48000:16 und höchstens 2 Kanälen akzeptiert"
+msgstr "opus wordt alleen geaccepteerd op 48000:16 met hoogstens 2 kanalen"

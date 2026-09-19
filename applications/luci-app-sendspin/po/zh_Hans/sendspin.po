@@ -1,185 +1,185 @@
 msgid ""
 msgstr ""
-"Language: de\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:113
 msgid "ALSA device to play through. A <code>hw:</code> device plays without resampling."
-msgstr "ALSA-Gerät für die Wiedergabe. Ein <code>hw:</code>-Gerät spielt ohne Resampling."
+msgstr "用于播放的 ALSA 设备。<code>hw:</code> 设备直接播放，不重采样。"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:104
 msgid "Advanced Settings"
-msgstr "Erweiterte Einstellungen"
+msgstr "高级设置"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:53
 msgid "All"
-msgstr "Alle"
+msgstr "全部"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:153
 msgid "Announce over mDNS"
-msgstr "Per mDNS bekanntgeben"
+msgstr "通过 mDNS 广播"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:139
 msgid "Audio kept buffered by the device, in milliseconds."
-msgstr "Vom Gerät gepufferte Audiodaten, in Millisekunden."
+msgstr "设备缓冲的音频时长（毫秒）。"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:138
 msgid "Buffer"
-msgstr "Puffer"
+msgstr "缓冲"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:134
 msgid "Card %d"
-msgstr "Karte %d"
+msgstr "声卡 %d"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:78
 msgid "Command failed"
-msgstr "Befehl fehlgeschlagen"
+msgstr "命令失败"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:160
 msgid "Connect to this server, as <code>host[:port]</code>, instead of waiting to be discovered."
-msgstr "Mit diesem Server verbinden, als <code>host[:port]</code>, statt darauf zu warten, gefunden zu werden."
+msgstr "以 <code>主机[:端口]</code> 的形式连接到该服务器，而不是等待被发现。"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:168
 msgid "Debug"
-msgstr "Debug"
+msgstr "调试"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:94
 msgid "Disabled"
-msgstr "Deaktiviert"
+msgstr "已禁用"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:106
 msgid "Enable"
-msgstr "Aktivieren"
+msgstr "启用"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:165
 msgid "Error"
-msgstr "Fehler"
+msgstr "错误"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:128
 msgid "Expected a comma-separated list of codec:rate:depth:channels, with codec flac, opus or pcm"
-msgstr "Erwartet wird eine kommagetrennte Liste aus Codec:Abtastrate:Bittiefe:Kanäle, mit dem Codec flac, opus oder pcm"
+msgstr "需要以逗号分隔的 编解码器:采样率:位深:声道数 列表，编解码器为 flac、opus 或 pcm"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:119
 msgid "Formats offered to the server first, as a comma-separated list of <code>codec:rate:depth:channels</code>, e.g. <code>flac:48000:16:2,pcm:48000:16:2</code>. The device's other formats stay behind them, so this is a preference the server can fall back from, not a restriction. Empty offers every format the device accepts."
-msgstr "Formate, die dem Server zuerst angeboten werden, als kommagetrennte Liste von <code>Codec:Abtastrate:Bittiefe:Kanäle</code>, z. B. <code>flac:48000:16:2,pcm:48000:16:2</code>. Die übrigen Formate des Geräts bleiben dahinter erhalten; es ist also eine Präferenz, von der der Server abweichen kann, keine Einschränkung. Leer werden alle Formate angeboten, die das Gerät akzeptiert."
+msgstr "优先提供给服务器的格式，以逗号分隔的 <code>编解码器:采样率:位深:声道数</code> 列表表示，例如 <code>flac:48000:16:2,pcm:48000:16:2</code>。设备的其他格式仍排在它们之后，因此这是服务器可以不采纳的偏好，而非限制。留空则提供设备接受的所有格式。"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:103
 msgid "General Settings"
-msgstr "Allgemeine Einstellungen"
+msgstr "基本设置"
 
 #: applications/luci-app-sendspin/root/usr/share/rpcd/acl.d/luci-app-sendspin.json:3
 msgid "Grant access to Sendspin player status, controls and configuration"
-msgstr "Zugriff auf Status, Steuerung und Konfiguration des Sendspin-Players gewähren"
+msgstr "授予访问 Sendspin 播放器状态、控制和配置的权限"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:35
 msgid "Group volume"
-msgstr "Gruppenlautstärke"
+msgstr "群组音量"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:167
 msgid "Info"
-msgstr "Info"
+msgstr "信息"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:144
 msgid "Latency added after the device, such as by an amplifier, in milliseconds. Only a first-run default: a delay set from the server is remembered."
-msgstr "Latenz nach dem Gerät, etwa durch einen Verstärker, in Millisekunden. Nur ein Startwert: Eine vom Server gesetzte Verzögerung wird beibehalten."
+msgstr "设备之后附加的延迟，例如来自功放，单位为毫秒。仅作为首次运行的默认值：服务器设置的延迟会被记住。"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:154
 msgid "Let a server discover the player. Ignored when a server address is set."
-msgstr "Erlaubt einem Server, den Player zu finden. Wird ignoriert, wenn eine Serveradresse gesetzt ist."
+msgstr "允许服务器发现该播放器。设置了服务器地址时将被忽略。"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:163
 msgid "Log level"
-msgstr "Protokollstufe"
+msgstr "日志级别"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:42
 msgid "Mute"
-msgstr "Stummschalten"
+msgstr "静音"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:104
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:109
 msgid "Name"
-msgstr "Name"
+msgstr "名称"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:110
 msgid "Name the server shows for this player. Defaults to the host name."
-msgstr "Name, den der Server für diesen Player anzeigt. Standardmäßig der Hostname."
+msgstr "服务器为该播放器显示的名称。默认使用主机名。"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:28
 msgid "Next"
-msgstr "Weiter"
+msgstr "下一曲"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:70
 msgid "No player is configured."
-msgstr "Es ist kein Player konfiguriert."
+msgstr "未配置任何播放器。"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:164
 msgid "None"
-msgstr "Keine"
+msgstr "无"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:97
 msgid "Not running"
-msgstr "Nicht aktiv"
+msgstr "未运行"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:51
 msgid "Off"
-msgstr "Aus"
+msgstr "关闭"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:52
 msgid "One track"
-msgstr "Ein Titel"
+msgstr "单曲"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:109
 msgid "Output"
-msgstr "Ausgabe"
+msgstr "输出"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:112
 msgid "Output device"
-msgstr "Ausgabegerät"
+msgstr "输出设备"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:26
 msgid "Pause"
-msgstr "Pause"
+msgstr "暂停"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:26
 msgid "Play"
-msgstr "Wiedergabe"
+msgstr "播放"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:24
 msgid "Playback"
-msgstr "Steuerung"
+msgstr "播放控制"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:94
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:97
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:100
 msgid "Player"
-msgstr "Player"
+msgstr "播放器"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:148
 msgid "Port"
-msgstr "Port"
+msgstr "端口"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:149
 msgid "Port the player listens on for the server."
-msgstr "Port, auf dem der Player auf den Server wartet."
+msgstr "播放器等待服务器连接的端口。"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:118
 msgid "Preferred formats"
-msgstr "Bevorzugte Formate"
+msgstr "首选格式"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:25
 msgid "Previous"
-msgstr "Zurück"
+msgstr "上一曲"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:47
 msgid "Repeat"
-msgstr "Wiederholen"
+msgstr "重复"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:100
 msgid "Running, status unavailable"
-msgstr "Aktiv, Status nicht verfügbar"
+msgstr "正在运行，无法获取状态"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:96
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/status/include/80_sendspin.js:6
@@ -189,72 +189,72 @@ msgstr "Sendspin"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:97
 msgid "Sendspin player: plays synchronized audio from a Sendspin server, such as Music Assistant, through a sound card connected to this device."
-msgstr "Sendspin-Player: spielt synchronisiertes Audio von einem Sendspin-Server wie Music Assistant über eine an dieses Gerät angeschlossene Soundkarte."
+msgstr "Sendspin 播放器：通过连接到本设备的声卡，播放来自 Sendspin 服务器（例如 Music Assistant）的同步音频。"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:105
 msgid "Server"
-msgstr "Server"
+msgstr "服务器"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:159
 msgid "Server address"
-msgstr "Serveradresse"
+msgstr "服务器地址"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:99
 msgid "Settings"
-msgstr "Einstellungen"
+msgstr "设置"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:58
 msgid "Shuffle"
-msgstr "Zufallswiedergabe"
+msgstr "随机播放"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:106
 msgid "State"
-msgstr "Wiedergabe"
+msgstr "状态"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:172
 msgid "State directory"
-msgstr "Statusverzeichnis"
+msgstr "状态目录"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:143
 msgid "Static delay"
-msgstr "Feste Verzögerung"
+msgstr "固定延迟"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:177
 msgid "Status"
-msgstr "Status"
+msgstr "状态"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:27
 msgid "Stop"
-msgstr "Stopp"
+msgstr "停止"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:15
 msgid "The player refused the command: %s"
-msgstr "Der Player hat den Befehl abgelehnt: %s"
+msgstr "播放器拒绝了该命令：%s"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:107
 msgid "Track"
-msgstr "Titel"
+msgstr "曲目"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:42
 msgid "Unmute"
-msgstr "Stummschaltung aufheben"
+msgstr "取消静音"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:169
 msgid "Verbose"
-msgstr "Ausführlich"
+msgstr "详细"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:108
 msgid "Volume"
-msgstr "Lautstärke"
+msgstr "音量"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:166
 msgid "Warning"
-msgstr "Warnung"
+msgstr "警告"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:173
 msgid "Where volume, mute, static delay and the last server are kept. The default is in RAM: lost at reboot, but the flash is spared."
-msgstr "Speicherort für Lautstärke, Stummschaltung, feste Verzögerung und den letzten Server. Standardmäßig im RAM: geht beim Neustart verloren, schont aber den Flash-Speicher."
+msgstr "保存音量、静音、固定延迟和最后一个服务器的位置。默认位于内存中：重启后丢失，但可以减少闪存磨损。"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:132
 msgid "opus is only accepted at 48000:16 with at most 2 channels"
-msgstr "opus wird nur mit 48000:16 und höchstens 2 Kanälen akzeptiert"
+msgstr "opus 仅支持 48000:16 且最多 2 声道"

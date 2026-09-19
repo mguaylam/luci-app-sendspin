@@ -15,15 +15,15 @@ msgstr ""
 msgid "All"
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:140
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:153
 msgid "Announce over mDNS"
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:126
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:139
 msgid "Audio kept buffered by the device, in milliseconds."
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:125
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:138
 msgid "Buffer"
 msgstr ""
 
@@ -35,13 +35,13 @@ msgstr ""
 msgid "Command failed"
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:147
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:160
 msgid ""
 "Connect to this server, as <code>host[:port]</code>, instead of waiting to "
 "be discovered."
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:155
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:168
 msgid "Debug"
 msgstr ""
 
@@ -53,19 +53,23 @@ msgstr ""
 msgid "Enable"
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:152
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:165
 msgid "Error"
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:123
-msgid "Expected codec:rate:depth:channels, with codec flac, opus or pcm"
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:128
+msgid ""
+"Expected a comma-separated list of codec:rate:depth:channels, with codec "
+"flac, opus or pcm"
 msgstr ""
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:119
 msgid ""
-"Format offered to the server first, as <code>codec:rate:depth:channels</"
-"code>, e.g. <code>flac:48000:16:2</code>. Empty offers every format the "
-"device accepts."
+"Formats offered to the server first, as a comma-separated list of "
+"<code>codec:rate:depth:channels</code>, e.g. "
+"<code>flac:48000:16:2,pcm:48000:16:2</code>. The device's other formats stay "
+"behind them, so this is a preference the server can fall back from, not a "
+"restriction. Empty offers every format the device accepts."
 msgstr ""
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:103
@@ -80,21 +84,21 @@ msgstr ""
 msgid "Group volume"
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:154
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:167
 msgid "Info"
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:131
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:144
 msgid ""
 "Latency added after the device, such as by an amplifier, in milliseconds. "
 "Only a first-run default: a delay set from the server is remembered."
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:141
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:154
 msgid "Let a server discover the player. Ignored when a server address is set."
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:150
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:163
 msgid "Log level"
 msgstr ""
 
@@ -119,7 +123,7 @@ msgstr ""
 msgid "No player is configured."
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:151
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:164
 msgid "None"
 msgstr ""
 
@@ -161,16 +165,16 @@ msgstr ""
 msgid "Player"
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:135
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:148
 msgid "Port"
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:136
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:149
 msgid "Port the player listens on for the server."
 msgstr ""
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:118
-msgid "Preferred format"
+msgid "Preferred formats"
 msgstr ""
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:25
@@ -201,7 +205,7 @@ msgstr ""
 msgid "Server"
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:146
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:159
 msgid "Server address"
 msgstr ""
 
@@ -217,15 +221,15 @@ msgstr ""
 msgid "State"
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:159
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:172
 msgid "State directory"
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:130
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:143
 msgid "Static delay"
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:164
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:177
 msgid "Status"
 msgstr ""
 
@@ -245,7 +249,7 @@ msgstr ""
 msgid "Unmute"
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:156
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:169
 msgid "Verbose"
 msgstr ""
 
@@ -253,12 +257,16 @@ msgstr ""
 msgid "Volume"
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:153
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:166
 msgid "Warning"
 msgstr ""
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:160
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:173
 msgid ""
 "Where volume, mute, static delay and the last server are kept. The default "
 "is in RAM: lost at reboot, but the flash is spared."
+msgstr ""
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:132
+msgid "opus is only accepted at 48000:16 with at most 2 channels"
 msgstr ""
