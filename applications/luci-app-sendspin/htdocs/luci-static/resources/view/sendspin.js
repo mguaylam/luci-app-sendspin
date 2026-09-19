@@ -115,12 +115,25 @@ return view.extend({
 		for (const [ value, label ] of devices)
 			o.value(value, label);
 
-		o = s.taboption('general', form.Value, 'audio_format', _('Preferred format'),
-			_('Format offered to the server first, as <code>codec:rate:depth:channels</code>, e.g. <code>flac:48000:16:2</code>. Empty offers every format the device accepts.'));
-		o.validate = (section_id, value) =>
-			(!value || /^(flac|opus|pcm):\d+:\d+:\d+$/.test(value))
-				? true
-				: _('Expected codec:rate:depth:channels, with codec flac, opus or pcm');
+		o = s.taboption('general', form.Value, 'audio_format', _('Preferred formats'),
+			_('Formats offered to the server first, as a comma-separated list of <code>codec:rate:depth:channels</code>, e.g. <code>flac:48000:16:2,pcm:48000:16:2</code>. The device\'s other formats stay behind them, so this is a preference the server can fall back from, not a restriction. Empty offers every format the device accepts.'));
+		o.validate = function(section_id, value) {
+			if (!value)
+				return true;
+
+			for (const entry of value.split(',')) {
+				const m = /^(flac|opus|pcm):(\d+):(\d+):(\d+)$/.exec(entry.trim());
+
+				if (!m)
+					return _('Expected a comma-separated list of codec:rate:depth:channels, with codec flac, opus or pcm');
+
+				/* the player refuses to start on any other opus format */
+				if (m[1] == 'opus' && (m[2] != '48000' || m[3] != '16' || +m[4] > 2))
+					return _('opus is only accepted at 48000:16 with at most 2 channels');
+			}
+
+			return true;
+		};
 
 		o = s.taboption('advanced', form.Value, 'buffer_ms', _('Buffer'),
 			_('Audio kept buffered by the device, in milliseconds.'));
