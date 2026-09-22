@@ -7,7 +7,7 @@ LUCI_DEPENDS:=+luci-base +sendspin-cli
 LUCI_PKGARCH:=all
 
 PKG_LICENSE:=Apache-2.0
-PKG_MAINTAINER:=Michaël Guay-Lambert <michaelguaylambert@me.com>
+PKG_MAINTAINER:=Michaël Guay-Lambert <mguaylam.dev@gmail.com>
 
 include $(TOPDIR)/feeds/luci/luci.mk
 
