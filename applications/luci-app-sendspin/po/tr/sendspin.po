@@ -6,67 +6,111 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:113
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:141
+msgid "%s is requesting to pair with this player."
+msgstr "%s bu oynatıcıyla eşleşme talep ediyor."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:66
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:142
+msgid "A server is requesting to pair with this player."
+msgstr "Bir sunucu bu oynatıcıyla eşleşme talep ediyor."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:286
 msgid "ALSA device to play through. A <code>hw:</code> device plays without resampling."
 msgstr "Çalınacak ALSA aygıtı. Bir <code>hw:</code> aygıtı yeniden örneklemeden çalar."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:104
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:277
 msgid "Advanced Settings"
 msgstr "Gelişmiş Ayarlar"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:53
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:229
 msgid "All"
 msgstr "Tümü"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:153
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:336
+msgid "Allow unpaired servers"
+msgstr "Eşleşmemiş sunuculara izin ver"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:100
+msgid "Alternative to the pairing code, for servers that accept a pairing token. Treat it as a password."
+msgstr "Eşleşme belirteci kabul eden sunucular için eşleşme koduna alternatif. Bir parola gibi korunmalıdır."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:326
 msgid "Announce over mDNS"
 msgstr "mDNS ile duyur"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:139
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:61
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:158
+msgid "Approve"
+msgstr "Onayla"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:312
 msgid "Audio kept buffered by the device, in milliseconds."
 msgstr "Aygıtın arabellekte tuttuğu ses, milisaniye cinsinden."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:138
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:311
 msgid "Buffer"
 msgstr "Arabellek"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:134
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:144
 msgid "Card %d"
 msgstr "Kart %d"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:153
+msgid "Close"
+msgstr "Kapat"
 
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:78
 msgid "Command failed"
 msgstr "Komut başarısız oldu"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:160
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:333
 msgid "Connect to this server, as <code>host[:port]</code>, instead of waiting to be discovered."
 msgstr "Keşfedilmeyi beklemek yerine bu sunucuya <code>sunucu[:bağlantı noktası]</code> olarak bağlan."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:168
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:337
+msgid "Connections are always encrypted. When enabled, any server on the network can play without pairing."
+msgstr "Bağlantılar her zaman şifrelenir. Etkinleştirildiğinde ağdaki herhangi bir sunucu eşleşme olmadan çalabilir."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:30
+msgid "Copied"
+msgstr "Kopyalandı"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:31
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:33
+msgid "Copy"
+msgstr "Kopyala"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:344
 msgid "Debug"
 msgstr "Hata ayıklama"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:94
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:102
 msgid "Disabled"
 msgstr "Devre dışı"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:106
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:279
 msgid "Enable"
 msgstr "Etkinleştir"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:165
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:54
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:152
+msgid "Enter this code in the server to complete pairing."
+msgstr "Eşleşmeyi tamamlamak için bu kodu sunucuya girin."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:341
 msgid "Error"
 msgstr "Hata"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:128
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:301
 msgid "Expected a comma-separated list of codec:rate:depth:channels, with codec flac, opus or pcm"
 msgstr "Virgülle ayrılmış kodek:frekans:bit:kanal listesi bekleniyordu; kodek flac, opus veya pcm olmalı"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:119
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:292
 msgid "Formats offered to the server first, as a comma-separated list of <code>codec:rate:depth:channels</code>, e.g. <code>flac:48000:16:2,pcm:48000:16:2</code>. The device's other formats stay behind them, so this is a preference the server can fall back from, not a restriction. Empty offers every format the device accepts."
 msgstr "Sunucuya önce sunulan biçimler, virgülle ayrılmış <code>kodek:frekans:bit:kanal</code> listesi olarak, örneğin <code>flac:48000:16:2,pcm:48000:16:2</code>. Aygıtın diğer biçimleri bunların arkasında sunulmaya devam eder; yani bu bir kısıtlama değil, sunucunun vazgeçebileceği bir tercihtir. Boş bırakılırsa aygıtın kabul ettiği tüm biçimler sunulur."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:103
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:276
 msgid "General Settings"
 msgstr "Genel Ayarlar"
 
@@ -74,187 +118,247 @@ msgstr "Genel Ayarlar"
 msgid "Grant access to Sendspin player status, controls and configuration"
 msgstr "Sendspin oynatıcısının durumuna, denetimlerine ve yapılandırmasına erişim verir"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:35
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:211
 msgid "Group volume"
 msgstr "Grup ses düzeyi"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:167
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:343
 msgid "Info"
 msgstr "Bilgi"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:144
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:317
 msgid "Latency added after the device, such as by an amplifier, in milliseconds. Only a first-run default: a delay set from the server is remembered."
 msgstr "Aygıttan sonra, örneğin bir amplifikatör tarafından eklenen gecikme, milisaniye cinsinden. Yalnızca ilk çalıştırma değeri: sunucudan ayarlanan gecikme hatırlanır."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:154
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:327
 msgid "Let a server discover the player. Ignored when a server address is set."
 msgstr "Bir sunucunun oynatıcıyı keşfetmesine izin verir. Sunucu adresi ayarlandığında yok sayılır."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:163
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:339
 msgid "Log level"
 msgstr "Günlük düzeyi"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:42
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:218
 msgid "Mute"
 msgstr "Sesi kapat"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:104
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:109
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:113
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:282
 msgid "Name"
 msgstr "Ad"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:110
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:283
 msgid "Name the server shows for this player. Defaults to the host name."
 msgstr "Sunucunun bu oynatıcı için gösterdiği ad. Öntanımlı olarak makine adı."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:28
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:204
 msgid "Next"
 msgstr "Sonraki"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:70
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:246
 msgid "No player is configured."
 msgstr "Yapılandırılmış oynatıcı yok."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:164
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:73
+msgid "No server connected"
+msgstr "Bağlı sunucu yok"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:340
 msgid "None"
 msgstr "Yok"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:97
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:111
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:73
+msgid "Not paired"
+msgstr "Eşleşmemiş"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:105
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:176
 msgid "Not running"
 msgstr "Çalışmıyor"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:51
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:227
 msgid "Off"
 msgstr "Kapalı"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:52
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:228
 msgid "One track"
 msgstr "Tek parça"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:109
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:119
 msgid "Output"
 msgstr "Çıkış"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:112
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:316
+msgid "Output delay"
+msgstr "Çıkış gecikmesi"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:285
 msgid "Output device"
 msgstr "Çıkış aygıtı"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:26
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:111
+msgid "Paired"
+msgstr "Eşleşmiş"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:69
+msgid "Paired with %s"
+msgstr "%s ile eşleşti"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:115
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:162
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:353
+msgid "Pairing"
+msgstr "Eşleşme"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:51
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:148
+msgid "Pairing code"
+msgstr "Eşleşme kodu"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:50
+msgid "Pairing in progress"
+msgstr "Eşleşme sürüyor"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:115
+msgid "Pairing in progress (code %s)"
+msgstr "Eşleşme sürüyor (kod %s)"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:99
+msgid "Pairing token"
+msgstr "Eşleşme belirteci"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:202
 msgid "Pause"
 msgstr "Duraklat"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:26
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:202
 msgid "Play"
 msgstr "Çal"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:24
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:200
 msgid "Playback"
 msgstr "Oynatma"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:94
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:97
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:100
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:102
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:105
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:108
 msgid "Player"
 msgstr "Oynatıcı"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:148
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:321
 msgid "Port"
 msgstr "Bağlantı noktası"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:149
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:322
 msgid "Port the player listens on for the server."
 msgstr "Oynatıcının sunucu için dinlediği bağlantı noktası."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:118
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:291
 msgid "Preferred formats"
 msgstr "Tercih edilen biçimler"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:25
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:201
 msgid "Previous"
 msgstr "Önceki"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:47
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:65
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:157
+msgid "Reject"
+msgstr "Reddet"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:223
 msgid "Repeat"
 msgstr "Yinele"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:100
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:108
 msgid "Running, status unavailable"
 msgstr "Çalışıyor, durum kullanılamıyor"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:96
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:269
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/status/include/80_sendspin.js:6
 #: applications/luci-app-sendspin/root/usr/share/luci/menu.d/luci-app-sendspin.json:3
 msgid "Sendspin"
 msgstr "Sendspin"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:97
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:270
 msgid "Sendspin player: plays synchronized audio from a Sendspin server, such as Music Assistant, through a sound card connected to this device."
 msgstr "Sendspin oynatıcı: Music Assistant gibi bir Sendspin sunucusundan gelen eşzamanlı sesi, bu aygıta bağlı bir ses kartı üzerinden çalar."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:105
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:114
 msgid "Server"
 msgstr "Sunucu"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:159
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:332
 msgid "Server address"
 msgstr "Sunucu adresi"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:99
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:272
 msgid "Settings"
 msgstr "Ayarlar"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:58
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:86
+msgid "Show"
+msgstr "Göster"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:234
 msgid "Shuffle"
 msgstr "Karıştır"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:106
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:116
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:50
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:57
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:69
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:72
 msgid "State"
 msgstr "Durum"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:172
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:348
 msgid "State directory"
 msgstr "Durum dizini"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:143
-msgid "Static delay"
-msgstr "Sabit gecikme"
-
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:177
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:354
 msgid "Status"
 msgstr "Durum"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:27
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:203
 msgid "Stop"
 msgstr "Durdur"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:15
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:349
+msgid "Stores the player's identity, pairings, volume, mute state and output delay. Use persistent storage: in RAM, this data is lost at each reboot and every server must pair again."
+msgstr "Oynatıcının kimliğini, eşleşmelerini, ses düzeyini, sessiz durumunu ve çıkış gecikmesini saklar. Kalıcı depolama kullanın: RAM'de bu veriler her yeniden başlatmada kaybolur ve her sunucunun yeniden eşleşmesi gerekir."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:46
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:135
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:191
 msgid "The player refused the command: %s"
 msgstr "Oynatıcı komutu reddetti: %s"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:107
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:74
+msgid "To pair, add this player in the server. The pairing code is displayed here when the server requests it."
+msgstr "Eşleştirmek için bu oynatıcıyı sunucuya ekleyin. Sunucu talep ettiğinde eşleşme kodu burada görüntülenir."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:117
 msgid "Track"
 msgstr "Parça"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:42
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:218
 msgid "Unmute"
 msgstr "Sesi aç"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:169
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:345
 msgid "Verbose"
 msgstr "Ayrıntılı"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:108
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:118
 msgid "Volume"
 msgstr "Ses düzeyi"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:166
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:342
 msgid "Warning"
 msgstr "Uyarı"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:173
-msgid "Where volume, mute, static delay and the last server are kept. The default is in RAM: lost at reboot, but the flash is spared."
-msgstr "Ses düzeyinin, sessizliğin, sabit gecikmenin ve son sunucunun tutulduğu yer. Öntanımlı olarak RAM'de: yeniden başlatmada kaybolur, ama flash bellek yıpranmaz."
-
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:132
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:305
 msgid "opus is only accepted at 48000:16 with at most 2 channels"
 msgstr "opus yalnızca 48000:16 ve en fazla 2 kanalda kabul edilir"

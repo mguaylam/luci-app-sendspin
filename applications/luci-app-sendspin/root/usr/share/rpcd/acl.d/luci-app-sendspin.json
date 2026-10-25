@@ -22,7 +22,9 @@
 				"/usr/bin/sendspin-cli vol * --control-socket /var/run/sendspin-cli/*.sock": [ "exec" ],
 				"/usr/bin/sendspin-cli mute * --control-socket /var/run/sendspin-cli/*.sock": [ "exec" ],
 				"/usr/bin/sendspin-cli repeat * --control-socket /var/run/sendspin-cli/*.sock": [ "exec" ],
-				"/usr/bin/sendspin-cli shuffle * --control-socket /var/run/sendspin-cli/*.sock": [ "exec" ]
+				"/usr/bin/sendspin-cli shuffle * --control-socket /var/run/sendspin-cli/*.sock": [ "exec" ],
+				"/usr/bin/sendspin-cli pair-token --control-socket /var/run/sendspin-cli/*.sock": [ "exec" ],
+				"/usr/bin/sendspin-cli pair * --control-socket /var/run/sendspin-cli/*.sock": [ "exec" ]
 			},
 			"uci": [ "sendspin-cli" ]
 		}

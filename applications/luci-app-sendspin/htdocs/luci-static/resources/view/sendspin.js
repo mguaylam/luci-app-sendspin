@@ -5,6 +5,187 @@
 'require ui';
 'require sendspin';
 
+/* Pairing tokens shown on request, kept across refreshes */
+const tokens = {};
+
+function copyText(text) {
+	/* the clipboard API needs HTTPS, which LuCI often is not served over */
+	if (navigator.clipboard && window.isSecureContext)
+		return navigator.clipboard.writeText(text);
+
+	const field = E('textarea', { 'style': 'position: fixed; opacity: 0' }, text);
+
+	document.body.appendChild(field);
+	field.select();
+	document.execCommand('copy');
+	field.remove();
+
+	return Promise.resolve();
+}
+
+function copyButton(text) {
+	return E('button', {
+		'class': 'cbi-button cbi-button-action',
+		'click': (ev) => copyText(text).then(() => {
+			ev.target.textContent = _('Copied');
+			window.setTimeout(() => ev.target.textContent = _('Copy'), 2000);
+		})
+	}, _('Copy'));
+}
+
+/* A value and the buttons acting on it, centred on one line */
+function withButtons(value, ...buttons) {
+	return E('div', { 'style': 'display: flex; align-items: center; gap: 0.75em; flex-wrap: wrap' }, [ value, ...buttons ]);
+}
+
+function describedValue(value, description) {
+	return E('div', {}, [ value, E('div', { 'class': 'cbi-value-description' }, description) ]);
+}
+
+/* Label and value rows saying where pairing stands for a running player */
+function renderPairing(player, refresh) {
+	const info = player.info;
+	const server = info.server?.replace(/ \(connected\)$/, '');
+	const rows = [];
+
+	const notify = (err) => ui.addNotification(null, E('p', {}, _('The player refused the command: %s').format(err.message)), 'error');
+	const send = (command, arg) => sendspin.control(player.id, command, arg).catch(notify).then(refresh);
+
+	if (info['pairing code']) {
+		rows.push([ _('State'), _('Pairing in progress') ]);
+		rows.push([ _('Pairing code'), describedValue(withButtons(
+			E('strong', { 'style': 'font-family: monospace; font-size: 1.5em' }, info['pairing code']),
+			copyButton(info['pairing code'])
+		), _('Enter this code in the server to complete pairing.')) ]);
+	}
+	else if (info['pairing window'] != null) {
+		rows.push([ _('State'), describedValue(E('div', {}, [
+			E('button', {
+				'class': 'cbi-button cbi-button-positive',
+				'click': ui.createHandlerFn(null, () => send('pair', 'confirm'))
+			}, _('Approve')), ' ',
+			E('button', {
+				'class': 'cbi-button cbi-button-negative',
+				'click': ui.createHandlerFn(null, () => send('pair', 'cancel'))
+			}, _('Reject'))
+		]), _('A server is requesting to pair with this player.')) ]);
+	}
+	else if (info.trust == 'paired') {
+		rows.push([ _('State'), _('Paired with %s').format(server) ]);
+	}
+	else {
+		rows.push([ _('State'), describedValue(
+			info.trust == 'unpaired' ? _('Not paired') : _('No server connected'),
+			_('To pair, add this player in the server. The pairing code is displayed here when the server requests it.')) ]);
+	}
+
+	let token;
+
+	if (tokens[player.id] == null) {
+		token = E('button', {
+			'class': 'cbi-button cbi-button-action',
+			'click': ui.createHandlerFn(null, () => sendspin.getPairingToken(player.id)
+				.then((value) => tokens[player.id] = value)
+				.catch(notify)
+				.then(refresh))
+		}, _('Show'));
+	}
+	else {
+		const field = E('input', {
+			'class': 'cbi-input-text',
+			'readonly': true,
+			'value': tokens[player.id],
+			'click': (ev) => ev.target.select()
+		});
+
+		token = withButtons(field, copyButton(tokens[player.id]));
+	}
+
+	rows.push([ _('Pairing token'), describedValue(token,
+		_('Alternative to the pairing code, for servers that accept a pairing token. Treat it as a password.')) ]);
+
+	return rows;
+}
+
+/*
+ * Opens a dialog when a pairing attempt needs the operator, and closes it
+ * when the attempt ends. A dialog the operator closed stays closed for that
+ * attempt.
+ */
+let pairingDialog = null;
+const dismissedDialogs = new Set();
+
+function updatePairingDialog(players, refresh) {
+	const player = players.find((p) => p.info?.['pairing code'] || p.info?.['pairing window'] != null);
+	const info = player?.info;
+	const key = player ? `${player.id}:${info['pairing code'] ?? 'window'}` : null;
+
+	if (key == pairingDialog)
+		return;
+
+	if (pairingDialog != null && !dismissedDialogs.has(pairingDialog))
+		ui.hideModal();
+
+	pairingDialog = key;
+
+	if (key == null || dismissedDialogs.has(key))
+		return;
+
+	const server = info.server?.endsWith(' (connected)') ? info.server.replace(/ \(connected\)$/, '') : null;
+	const close = () => {
+		dismissedDialogs.add(key);
+		ui.hideModal();
+	};
+	const send = (command) => sendspin.control(player.id, 'pair', command)
+		.catch((err) => ui.addNotification(null, E('p', {}, _('The player refused the command: %s').format(err.message)), 'error'))
+		.then(close)
+		.then(refresh);
+
+	const body = [
+		E('p', {}, server
+			? _('%s is requesting to pair with this player.').format(server)
+			: _('A server is requesting to pair with this player.'))
+	];
+
+	if (info['pairing code']) {
+		body.push(
+			E('p', {}, withButtons(
+				E('span', {}, [ _('Pairing code'), ': ' ]),
+				E('strong', { 'style': 'font-family: monospace; font-size: 1.5em' }, info['pairing code']),
+				copyButton(info['pairing code'])
+			)),
+			E('p', {}, _('Enter this code in the server to complete pairing.')),
+			E('div', { 'class': 'right' }, E('button', { 'class': 'btn cbi-button', 'click': close }, _('Close'))));
+	}
+	else {
+		body.push(E('div', { 'class': 'right' }, [
+			E('button', { 'class': 'btn cbi-button cbi-button-negative', 'click': ui.createHandlerFn(null, () => send('cancel')) }, _('Reject')), ' ',
+			E('button', { 'class': 'btn cbi-button cbi-button-positive', 'click': ui.createHandlerFn(null, () => send('confirm')) }, _('Approve'))
+		]));
+	}
+
+	ui.showModal(_('Pairing'), body);
+}
+
+function renderTable(rows) {
+	return E('table', { 'class': 'table' }, rows.map(([ label, value ]) => E('tr', { 'class': 'tr' }, [
+		E('td', { 'class': 'td left', 'width': '33%' }, label),
+		E('td', { 'class': 'td left' }, value)
+	])));
+}
+
+function renderPairingSection(players, refresh) {
+	const running = players.filter((player) => player.info);
+
+	if (!running.length)
+		return E('em', {}, _('Not running'));
+
+	return E('div', {}, running.map((player) => E('div', {}, [
+		running.length > 1 ? E('h4', {}, player.info.name || player.id) : '',
+		renderTable(renderPairing(player, refresh))
+	])));
+}
+
 /* Playback and group controls for a player connected to a server */
 function renderControls(player, refresh) {
 	const info = player.info;
@@ -75,10 +256,7 @@ function renderStatus(players, refresh) {
 		if (player.info?.server?.endsWith('(connected)'))
 			rows.push(...renderControls(player, refresh));
 
-		return E('table', { 'class': 'table' }, rows.map(([ label, value ]) => E('tr', { 'class': 'tr' }, [
-			E('td', { 'class': 'td left', 'width': '33%' }, label),
-			E('td', { 'class': 'td left' }, value)
-		])));
+		return renderTable(rows);
 	}));
 }
 
@@ -140,7 +318,7 @@ return view.extend({
 		o.datatype = 'range(10,2000)';
 		o.placeholder = '100';
 
-		o = s.taboption('advanced', form.Value, 'static_delay', _('Static delay'),
+		o = s.taboption('advanced', form.Value, 'output_delay', _('Output delay'),
 			_('Latency added after the device, such as by an amplifier, in milliseconds. Only a first-run default: a delay set from the server is remembered.'));
 		o.datatype = 'uinteger';
 		o.placeholder = '0';
@@ -160,6 +338,9 @@ return view.extend({
 			_('Connect to this server, as <code>host[:port]</code>, instead of waiting to be discovered.'));
 		o.datatype = 'or(hostport,host)';
 
+		o = s.taboption('advanced', form.Flag, 'allow_unpaired', _('Allow unpaired servers'),
+			_('Connections are always encrypted. When enabled, any server on the network can play without pairing.'));
+
 		o = s.taboption('advanced', form.ListValue, 'log_level', _('Log level'));
 		o.value('none', _('None'));
 		o.value('error', _('Error'));
@@ -170,30 +351,41 @@ return view.extend({
 		o.default = 'info';
 
 		o = s.taboption('advanced', form.Value, 'state_dir', _('State directory'),
-			_('Where volume, mute, static delay and the last server are kept. The default is in RAM: lost at reboot, but the flash is spared.'));
-		o.placeholder = '/var/lib/sendspin-cli';
+			_('Stores the player\'s identity, pairings, volume, mute state and output delay. Use persistent storage: in RAM, this data is lost at each reboot and every server must pair again.'));
+		o.placeholder = '/etc/sendspin-cli';
 
 		/* Kept outside the map, which renders again after every save */
+		const pairing = E('div', { 'class': 'cbi-section' }, [ E('h3', {}, _('Pairing')), E('div') ]);
 		const status = E('div', { 'class': 'cbi-section' }, [ E('h3', {}, _('Status')), E('div') ]);
 
-		const refresh = () => sendspin.getPlayers().then((current) => {
+		const update = (current) => {
+			pairing.lastElementChild.replaceChildren(renderPairingSection(current, refresh));
 			status.lastElementChild.replaceChildren(renderStatus(current, refresh));
+		};
+		const refresh = () => sendspin.getPlayers().then((current) => {
+			update(current);
+			updatePairingDialog(current, refresh);
 		});
 
-		status.lastElementChild.appendChild(renderStatus(players, refresh));
+		update(players);
 
-		/* Leave the controls alone while one is being used */
+		/*
+		 * Often enough that a code shows up while the server waits for it, but
+		 * leave the controls alone while one is being used
+		 */
 		poll.add(() => {
 			const active = document.activeElement;
 
-			if (active && status.contains(active) && active.matches('input, select'))
+			if (active && (status.contains(active) || pairing.contains(active)) && active.matches('input, select'))
 				return Promise.resolve();
 
 			return refresh();
-		}, 5);
+		}, 2);
 
 		return m.render().then((node) => {
-			node.querySelector('.cbi-map-descr')?.after(status);
+			node.querySelector('.cbi-map-descr')?.after(status, pairing);
+			/* once the page is up, for an attempt already waiting on arrival */
+			window.requestAnimationFrame(() => updatePairingDialog(players, refresh));
 			return node;
 		});
 	}

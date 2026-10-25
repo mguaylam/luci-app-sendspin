@@ -81,6 +81,14 @@ return baseclass.extend({
 		});
 	},
 
+	/*
+	 * The player's pairing token, which a server pastes to pair with it.
+	 * Whoever holds it can pair a server, so it is only read on request.
+	 */
+	getPairingToken(id) {
+		return this.control(id, 'pair-token').then((res) => res.stdout.trim());
+	},
+
 	/* "21 (muted)" as { volume: 21, muted: true }, or null when unknown */
 	parseVolume(value) {
 		const m = /^(\d+)( \(muted\))?$/.exec(value ?? '');
@@ -100,9 +108,11 @@ return baseclass.extend({
 			return [ [ _('Player'), _('Running, status unavailable') ] ];
 
 		const info = player.info;
+		const trust = { 'paired': _('Paired'), 'unpaired': _('Not paired') };
 		const rows = [
 			[ _('Name'), info.name ],
 			[ _('Server'), info.server ],
+			[ _('Pairing'), info['pairing code'] ? _('Pairing in progress (code %s)').format(info['pairing code']) : trust[info.trust] ],
 			[ _('State'), info.state ],
 			[ _('Track'), info.track ],
 			[ _('Volume'), info['player volume'] ],
