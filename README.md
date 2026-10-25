@@ -11,23 +11,32 @@ the Sendspin player packaged for OpenWrt in
 
 Under *Services → Sendspin*:
 
-- **Status** of each player, refreshed every five seconds: whether it runs,
-  the server it is connected to, playback state, track, volume and output.
-  The same summary appears on the *Status → Overview* page.
+- **Status** of each player, refreshed every two seconds: whether it runs,
+  the server it is connected to, whether that server is paired, playback
+  state, track, volume and output. The same summary appears on the
+  *Status → Overview* page.
+- **Pairing.** Every connection is encrypted, and a server must pair with
+  the player before it can play. When a server asks to pair with a code, a
+  dialog opens with the code and a button to copy it, and closes when the
+  attempt ends; a server pairing with a static code is approved or rejected
+  in the same dialog. The *Pairing* section says where pairing stands, and
+  shows the player's pairing token on request, for a server that takes a
+  token instead of a code.
 - **Controls** for a player connected to a server: previous, play or pause,
   stop, next, group volume and mute, repeat and shuffle. They act on the
   player's group, through the server, and need write access in LuCI.
 - **Settings** for `/etc/config/sendspin-cli`: enabling the player, its name,
   the output device (playback devices found in `/proc/asound` are offered),
-  the preferred format, and under *Advanced Settings* the buffer, static
-  delay, port, mDNS announcement, server address, log level and state
-  directory. Saving restarts the player.
+  the preferred format, and under *Advanced Settings* the buffer, output
+  delay, port, mDNS announcement, server address, unpaired access, log level
+  and state directory. Saving restarts the player.
 
 Everything goes through `rpcd`, as granted in
 `root/usr/share/rpcd/acl.d/luci-app-sendspin.json`: reading the service list,
 the two `/proc/asound` files and `sendspin-cli status`; and, with write access,
-the `sendspin-cli` control subcommands above, all on the players' control
-sockets in `/var/run/sendspin-cli/`.
+the `sendspin-cli` control subcommands above, `pair-token` and `pair`, all on
+the players' control sockets in `/var/run/sendspin-cli/`. The pairing token
+needs write access because whoever holds it can pair a server.
 
 Cover art is not shown: the Sendspin metadata carries an artwork URL, but
 `sendspin-cli status` does not print it.
