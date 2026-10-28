@@ -6,69 +6,73 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:141
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:146
 msgid "%s is requesting to pair with this player."
 msgstr "%s이(가) 이 플레이어와의 페어링을 요청하고 있습니다."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:66
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:142
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:71
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:147
 msgid "A server is requesting to pair with this player."
 msgstr "서버가 이 플레이어와의 페어링을 요청하고 있습니다."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:286
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:298
+msgid "ALSA device to capture from, such as a line-in or a microphone, and stream to the server. Only a paired server can use it, as a Live Input in Music Assistant. A card missing at startup costs only the input: the player plays without it and restarts with it once the card appears. Empty captures nothing."
+msgstr "라인 입력이나 마이크처럼 캡처하여 서버로 스트리밍할 ALSA 장치입니다. 페어링된 서버만 사용할 수 있으며, Music Assistant에서는 Live Input으로 표시됩니다. 시작할 때 카드가 없으면 입력만 빠집니다. 플레이어는 입력 없이 재생하다가 카드가 나타나면 입력과 함께 다시 시작합니다. 비워 두면 아무것도 캡처하지 않습니다."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:292
 msgid "ALSA device to play through. A <code>hw:</code> device plays without resampling."
 msgstr "재생에 사용할 ALSA 장치입니다. <code>hw:</code> 장치는 리샘플링 없이 재생합니다."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:277
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:283
 msgid "Advanced Settings"
 msgstr "고급 설정"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:229
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:234
 msgid "All"
 msgstr "전체"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:336
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:349
 msgid "Allow unpaired servers"
 msgstr "페어링되지 않은 서버 허용"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:100
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:105
 msgid "Alternative to the pairing code, for servers that accept a pairing token. Treat it as a password."
 msgstr "페어링 토큰을 지원하는 서버를 위한 페어링 코드의 대안입니다. 비밀번호처럼 취급하세요."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:326
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:339
 msgid "Announce over mDNS"
 msgstr "mDNS로 알리기"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:61
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:158
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:66
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:163
 msgid "Approve"
 msgstr "승인"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:312
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:325
 msgid "Audio kept buffered by the device, in milliseconds."
 msgstr "장치가 버퍼에 유지하는 오디오 길이(밀리초)."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:311
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:324
 msgid "Buffer"
 msgstr "버퍼"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:144
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:48
 msgid "Card %d"
 msgstr "카드 %d"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:153
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:158
 msgid "Close"
 msgstr "닫기"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:78
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:109
 msgid "Command failed"
 msgstr "명령이 실패했습니다"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:333
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:346
 msgid "Connect to this server, as <code>host[:port]</code>, instead of waiting to be discovered."
 msgstr "검색되기를 기다리지 않고 <code>호스트[:포트]</code> 형식으로 이 서버에 연결합니다."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:337
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:350
 msgid "Connections are always encrypted. When enabled, any server on the network can play without pairing."
 msgstr "연결은 항상 암호화됩니다. 사용하면 네트워크의 모든 서버가 페어링 없이 재생할 수 있습니다."
 
@@ -81,36 +85,36 @@ msgstr "복사됨"
 msgid "Copy"
 msgstr "복사"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:344
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:357
 msgid "Debug"
 msgstr "디버그"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:102
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:133
 msgid "Disabled"
 msgstr "비활성화됨"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:279
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:285
 msgid "Enable"
 msgstr "활성화"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:54
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:152
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:59
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:157
 msgid "Enter this code in the server to complete pairing."
 msgstr "페어링을 완료하려면 서버에 이 코드를 입력하세요."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:341
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:354
 msgid "Error"
 msgstr "오류"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:301
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:314
 msgid "Expected a comma-separated list of codec:rate:depth:channels, with codec flac, opus or pcm"
 msgstr "코덱:샘플레이트:비트깊이:채널 형식을 쉼표로 구분한 목록이 필요합니다. 코덱은 flac, opus 또는 pcm이어야 합니다"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:292
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:305
 msgid "Formats offered to the server first, as a comma-separated list of <code>codec:rate:depth:channels</code>, e.g. <code>flac:48000:16:2,pcm:48000:16:2</code>. The device's other formats stay behind them, so this is a preference the server can fall back from, not a restriction. Empty offers every format the device accepts."
 msgstr "서버에 먼저 제시할 형식을 <code>코덱:샘플레이트:비트깊이:채널</code> 형식의 쉼표 구분 목록으로 지정합니다(예: <code>flac:48000:16:2,pcm:48000:16:2</code>). 장치의 다른 형식도 그 뒤에 남아 있으므로, 이는 제한이 아니라 서버가 벗어나도 되는 선호 순서입니다. 비워 두면 장치가 허용하는 모든 형식을 제시합니다."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:276
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:282
 msgid "General Settings"
 msgstr "일반 설정"
 
@@ -118,247 +122,264 @@ msgstr "일반 설정"
 msgid "Grant access to Sendspin player status, controls and configuration"
 msgstr "Sendspin 플레이어의 상태, 제어 및 설정에 대한 접근을 허용합니다"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:211
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:216
 msgid "Group volume"
 msgstr "그룹 음량"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:343
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:356
 msgid "Info"
 msgstr "정보"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:317
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:151
+msgid "Input"
+msgstr "입력"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:297
+msgid "Input device"
+msgstr "입력 장치"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:330
 msgid "Latency added after the device, such as by an amplifier, in milliseconds. Only a first-run default: a delay set from the server is remembered."
 msgstr "앰프 등 장치 이후에 추가되는 지연(밀리초). 최초 실행 시 기본값으로만 쓰이며, 서버에서 설정한 지연은 기억됩니다."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:327
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:340
 msgid "Let a server discover the player. Ignored when a server address is set."
 msgstr "서버가 플레이어를 검색할 수 있게 합니다. 서버 주소가 설정되어 있으면 무시됩니다."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:339
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:352
 msgid "Log level"
 msgstr "로그 수준"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:218
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:223
 msgid "Mute"
 msgstr "음소거"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:113
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:282
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:144
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:288
 msgid "Name"
 msgstr "이름"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:283
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:289
 msgid "Name the server shows for this player. Defaults to the host name."
 msgstr "서버가 이 플레이어에 대해 표시하는 이름입니다. 기본값은 호스트 이름입니다."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:204
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:209
 msgid "Next"
 msgstr "다음"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:246
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:151
+msgid "No capture device, playing without it until one appears"
+msgstr "캡처 장치가 없어 장치가 나타날 때까지 입력 없이 재생합니다"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:251
 msgid "No player is configured."
 msgstr "구성된 플레이어가 없습니다."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:73
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:78
 msgid "No server connected"
 msgstr "연결된 서버 없음"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:340
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:299
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:353
 msgid "None"
 msgstr "없음"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:111
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:73
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:142
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:78
 msgid "Not paired"
 msgstr "페어링 안 됨"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:105
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:176
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:136
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:181
 msgid "Not running"
 msgstr "실행 중이 아님"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:227
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:232
 msgid "Off"
 msgstr "끔"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:228
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:233
 msgid "One track"
 msgstr "한 곡"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:119
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:150
 msgid "Output"
 msgstr "출력"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:316
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:329
 msgid "Output delay"
 msgstr "출력 지연"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:285
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:291
 msgid "Output device"
 msgstr "출력 장치"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:111
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:142
 msgid "Paired"
 msgstr "페어링됨"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:69
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:74
 msgid "Paired with %s"
 msgstr "%s와(과) 페어링됨"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:115
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:162
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:353
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:146
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:167
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:366
 msgid "Pairing"
 msgstr "페어링"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:51
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:148
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:56
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:153
 msgid "Pairing code"
 msgstr "페어링 코드"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:50
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:55
 msgid "Pairing in progress"
 msgstr "페어링 진행 중"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:115
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:146
 msgid "Pairing in progress (code %s)"
 msgstr "페어링 진행 중 (코드 %s)"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:99
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:104
 msgid "Pairing token"
 msgstr "페어링 토큰"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:202
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:207
 msgid "Pause"
 msgstr "일시정지"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:202
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:207
 msgid "Play"
 msgstr "재생"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:200
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:205
 msgid "Playback"
 msgstr "재생 제어"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:102
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:105
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:108
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:133
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:136
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:139
 msgid "Player"
 msgstr "플레이어"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:321
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:334
 msgid "Port"
 msgstr "포트"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:322
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:335
 msgid "Port the player listens on for the server."
 msgstr "플레이어가 서버를 기다리며 수신하는 포트입니다."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:291
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:304
 msgid "Preferred formats"
 msgstr "선호 형식"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:201
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:206
 msgid "Previous"
 msgstr "이전"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:65
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:157
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:70
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:162
 msgid "Reject"
 msgstr "거부"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:223
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:228
 msgid "Repeat"
 msgstr "반복"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:108
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:139
 msgid "Running, status unavailable"
 msgstr "실행 중, 상태를 가져올 수 없음"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:269
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:275
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/status/include/80_sendspin.js:6
 #: applications/luci-app-sendspin/root/usr/share/luci/menu.d/luci-app-sendspin.json:3
 msgid "Sendspin"
 msgstr "Sendspin"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:270
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:276
 msgid "Sendspin player: plays synchronized audio from a Sendspin server, such as Music Assistant, through a sound card connected to this device."
 msgstr "Sendspin 플레이어: Music Assistant 같은 Sendspin 서버에서 동기화된 오디오를 이 장치에 연결된 사운드 카드로 재생합니다."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:114
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:145
 msgid "Server"
 msgstr "서버"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:332
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:345
 msgid "Server address"
 msgstr "서버 주소"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:272
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:278
 msgid "Settings"
 msgstr "설정"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:86
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:91
 msgid "Show"
 msgstr "표시"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:234
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:239
 msgid "Shuffle"
 msgstr "셔플"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:116
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:50
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:57
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:69
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:72
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:147
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:55
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:62
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:74
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:77
 msgid "State"
 msgstr "상태"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:348
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:361
 msgid "State directory"
 msgstr "상태 디렉터리"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:354
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:367
 msgid "Status"
 msgstr "상태"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:203
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:208
 msgid "Stop"
 msgstr "정지"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:349
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:362
 msgid "Stores the player's identity, pairings, volume, mute state and output delay. Use persistent storage: in RAM, this data is lost at each reboot and every server must pair again."
 msgstr "플레이어의 ID, 페어링, 볼륨, 음소거 상태 및 출력 지연을 저장합니다. 영구 저장소를 사용하세요. RAM에서는 재부팅할 때마다 이 데이터가 사라지고 모든 서버가 다시 페어링해야 합니다."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:46
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:135
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:191
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:302
+msgid "Test tone (440 Hz)"
+msgstr "테스트 톤 (440 Hz)"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:51
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:140
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:196
 msgid "The player refused the command: %s"
 msgstr "플레이어가 명령을 거부했습니다: %s"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:74
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:79
 msgid "To pair, add this player in the server. The pairing code is displayed here when the server requests it."
 msgstr "페어링하려면 서버에서 이 플레이어를 추가하세요. 서버가 요청하면 페어링 코드가 여기에 표시됩니다."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:117
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:148
 msgid "Track"
 msgstr "트랙"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:218
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:223
 msgid "Unmute"
 msgstr "음소거 해제"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:345
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:358
 msgid "Verbose"
 msgstr "상세"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:118
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:149
 msgid "Volume"
 msgstr "음량"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:342
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:355
 msgid "Warning"
 msgstr "경고"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:305
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:318
 msgid "opus is only accepted at 48000:16 with at most 2 channels"
 msgstr "opus는 48000:16에서 최대 2채널로만 허용됩니다"

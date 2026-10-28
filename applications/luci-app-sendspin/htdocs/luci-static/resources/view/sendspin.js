@@ -264,11 +264,12 @@ return view.extend({
 	load() {
 		return Promise.all([
 			sendspin.getPlayers(),
-			sendspin.getPlaybackDevices()
+			sendspin.getPlaybackDevices(),
+			sendspin.getCaptureDevices()
 		]);
 	},
 
-	render([ players, devices ]) {
+	render([ players, devices, captureDevices ]) {
 		let m, s, o;
 
 		m = new form.Map('sendspin-cli', _('Sendspin'),
@@ -292,6 +293,13 @@ return view.extend({
 		o.placeholder = 'hw:0,0';
 		for (const [ value, label ] of devices)
 			o.value(value, label);
+
+		o = s.taboption('general', form.Value, 'input', _('Input device'),
+			_('ALSA device to capture from, such as a line-in or a microphone, and stream to the server. Only a paired server can use it, as a Live Input in Music Assistant. A card missing at startup costs only the input: the player plays without it and restarts with it once the card appears. Empty captures nothing.'));
+		o.placeholder = _('None');
+		for (const [ value, label ] of captureDevices)
+			o.value(value, label);
+		o.value('tone', _('Test tone (440 Hz)'));
 
 		o = s.taboption('general', form.Value, 'audio_format', _('Preferred formats'),
 			_('Formats offered to the server first, as a comma-separated list of <code>codec:rate:depth:channels</code>, e.g. <code>flac:48000:16:2,pcm:48000:16:2</code>. The device\'s other formats stay behind them, so this is a preference the server can fall back from, not a restriction. Empty offers every format the device accepts.'));

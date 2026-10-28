@@ -6,69 +6,73 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:141
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:146
 msgid "%s is requesting to pair with this player."
 msgstr "%s demande l'appairage avec ce lecteur."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:66
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:142
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:71
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:147
 msgid "A server is requesting to pair with this player."
 msgstr "Un serveur demande l'appairage avec ce lecteur."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:286
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:298
+msgid "ALSA device to capture from, such as a line-in or a microphone, and stream to the server. Only a paired server can use it, as a Live Input in Music Assistant. A card missing at startup costs only the input: the player plays without it and restarts with it once the card appears. Empty captures nothing."
+msgstr "Périphérique ALSA à capturer, comme une entrée ligne ou un microphone, et à diffuser vers le serveur. Seul un serveur appairé peut s'en servir, comme Live Input dans Music Assistant. Une carte absente au démarrage ne coûte que l'entrée : le lecteur joue sans elle et redémarre avec elle dès que la carte apparaît. Vide, rien n'est capturé."
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:292
 msgid "ALSA device to play through. A <code>hw:</code> device plays without resampling."
 msgstr "Périphérique ALSA utilisé pour la lecture. Un périphérique <code>hw:</code> joue sans rééchantillonnage."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:277
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:283
 msgid "Advanced Settings"
 msgstr "Paramètres avancés"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:229
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:234
 msgid "All"
 msgstr "Toute la liste"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:336
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:349
 msgid "Allow unpaired servers"
 msgstr "Autoriser les serveurs non appairés"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:100
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:105
 msgid "Alternative to the pairing code, for servers that accept a pairing token. Treat it as a password."
 msgstr "Alternative au code d'appairage, pour les serveurs qui acceptent un jeton d'appairage. À traiter comme un mot de passe."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:326
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:339
 msgid "Announce over mDNS"
 msgstr "Annoncer via mDNS"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:61
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:158
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:66
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:163
 msgid "Approve"
 msgstr "Approuver"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:312
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:325
 msgid "Audio kept buffered by the device, in milliseconds."
 msgstr "Audio gardé en mémoire tampon par le périphérique, en millisecondes."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:311
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:324
 msgid "Buffer"
 msgstr "Tampon"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:144
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:48
 msgid "Card %d"
 msgstr "Carte %d"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:153
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:158
 msgid "Close"
 msgstr "Fermer"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:78
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:109
 msgid "Command failed"
 msgstr "La commande a échoué"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:333
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:346
 msgid "Connect to this server, as <code>host[:port]</code>, instead of waiting to be discovered."
 msgstr "Se connecter à ce serveur, sous la forme <code>host[:port]</code>, au lieu d’attendre d’être découvert."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:337
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:350
 msgid "Connections are always encrypted. When enabled, any server on the network can play without pairing."
 msgstr "Les connexions sont toujours chiffrées. Si cette option est activée, tout serveur du réseau peut lire sans appairage."
 
@@ -81,36 +85,36 @@ msgstr "Copié"
 msgid "Copy"
 msgstr "Copier"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:344
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:357
 msgid "Debug"
 msgstr "Débogage"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:102
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:133
 msgid "Disabled"
 msgstr "Désactivé"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:279
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:285
 msgid "Enable"
 msgstr "Activer"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:54
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:152
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:59
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:157
 msgid "Enter this code in the server to complete pairing."
 msgstr "Saisissez ce code dans le serveur pour terminer l'appairage."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:341
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:354
 msgid "Error"
 msgstr "Erreur"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:301
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:314
 msgid "Expected a comma-separated list of codec:rate:depth:channels, with codec flac, opus or pcm"
 msgstr "Liste attendue, séparée par des virgules : codec:fréquence:bits:canaux, où le codec est flac, opus ou pcm"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:292
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:305
 msgid "Formats offered to the server first, as a comma-separated list of <code>codec:rate:depth:channels</code>, e.g. <code>flac:48000:16:2,pcm:48000:16:2</code>. The device's other formats stay behind them, so this is a preference the server can fall back from, not a restriction. Empty offers every format the device accepts."
 msgstr "Formats proposés en premier au serveur, sous la forme d'une liste séparée par des virgules de <code>codec:fréquence:bits:canaux</code>, par exemple <code>flac:48000:16:2,pcm:48000:16:2</code>. Les autres formats du périphérique restent proposés derrière eux : c'est une préférence dont le serveur peut s'écarter, pas une restriction. Vide, tous les formats acceptés par le périphérique sont proposés."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:276
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:282
 msgid "General Settings"
 msgstr "Paramètres généraux"
 
@@ -118,247 +122,264 @@ msgstr "Paramètres généraux"
 msgid "Grant access to Sendspin player status, controls and configuration"
 msgstr "Donner accès à l’état, aux commandes et à la configuration du lecteur Sendspin"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:211
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:216
 msgid "Group volume"
 msgstr "Volume du groupe"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:343
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:356
 msgid "Info"
 msgstr "Information"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:317
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:151
+msgid "Input"
+msgstr "Entrée"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:297
+msgid "Input device"
+msgstr "Périphérique d'entrée"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:330
 msgid "Latency added after the device, such as by an amplifier, in milliseconds. Only a first-run default: a delay set from the server is remembered."
 msgstr "Latence ajoutée après le périphérique, par exemple par un amplificateur, en millisecondes. Valeur initiale seulement : un délai réglé depuis le serveur est conservé."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:327
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:340
 msgid "Let a server discover the player. Ignored when a server address is set."
 msgstr "Permet à un serveur de découvrir le lecteur. Ignoré si une adresse de serveur est définie."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:339
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:352
 msgid "Log level"
 msgstr "Niveau de journalisation"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:218
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:223
 msgid "Mute"
 msgstr "Couper le son"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:113
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:282
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:144
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:288
 msgid "Name"
 msgstr "Nom"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:283
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:289
 msgid "Name the server shows for this player. Defaults to the host name."
 msgstr "Nom affiché par le serveur pour ce lecteur. Par défaut, le nom d’hôte."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:204
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:209
 msgid "Next"
 msgstr "Suivant"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:246
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:151
+msgid "No capture device, playing without it until one appears"
+msgstr "Aucun périphérique de capture, lecture sans entrée jusqu'à ce qu'il apparaisse"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:251
 msgid "No player is configured."
 msgstr "Aucun lecteur n’est configuré."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:73
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:78
 msgid "No server connected"
 msgstr "Aucun serveur connecté"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:340
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:299
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:353
 msgid "None"
 msgstr "Aucun"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:111
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:73
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:142
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:78
 msgid "Not paired"
 msgstr "Non appairé"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:105
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:176
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:136
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:181
 msgid "Not running"
 msgstr "Arrêté"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:227
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:232
 msgid "Off"
 msgstr "Désactivé"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:228
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:233
 msgid "One track"
 msgstr "Un morceau"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:119
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:150
 msgid "Output"
 msgstr "Sortie"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:316
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:329
 msgid "Output delay"
 msgstr "Délai de sortie"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:285
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:291
 msgid "Output device"
 msgstr "Périphérique de sortie"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:111
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:142
 msgid "Paired"
 msgstr "Appairé"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:69
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:74
 msgid "Paired with %s"
 msgstr "Appairé avec %s"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:115
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:162
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:353
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:146
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:167
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:366
 msgid "Pairing"
 msgstr "Appairage"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:51
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:148
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:56
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:153
 msgid "Pairing code"
 msgstr "Code d'appairage"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:50
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:55
 msgid "Pairing in progress"
 msgstr "Appairage en cours"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:115
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:146
 msgid "Pairing in progress (code %s)"
 msgstr "Appairage en cours (code %s)"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:99
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:104
 msgid "Pairing token"
 msgstr "Jeton d'appairage"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:202
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:207
 msgid "Pause"
 msgstr "Pause"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:202
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:207
 msgid "Play"
 msgstr "Lecture"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:200
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:205
 msgid "Playback"
 msgstr "Commandes"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:102
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:105
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:108
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:133
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:136
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:139
 msgid "Player"
 msgstr "Lecteur"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:321
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:334
 msgid "Port"
 msgstr "Port"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:322
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:335
 msgid "Port the player listens on for the server."
 msgstr "Port sur lequel le lecteur attend le serveur."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:291
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:304
 msgid "Preferred formats"
 msgstr "Formats préférés"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:201
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:206
 msgid "Previous"
 msgstr "Précédent"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:65
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:157
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:70
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:162
 msgid "Reject"
 msgstr "Refuser"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:223
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:228
 msgid "Repeat"
 msgstr "Répétition"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:108
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:139
 msgid "Running, status unavailable"
 msgstr "En marche, état indisponible"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:269
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:275
 #: applications/luci-app-sendspin/htdocs/luci-static/resources/view/status/include/80_sendspin.js:6
 #: applications/luci-app-sendspin/root/usr/share/luci/menu.d/luci-app-sendspin.json:3
 msgid "Sendspin"
 msgstr "Sendspin"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:270
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:276
 msgid "Sendspin player: plays synchronized audio from a Sendspin server, such as Music Assistant, through a sound card connected to this device."
 msgstr "Lecteur Sendspin : joue l’audio synchronisé d’un serveur Sendspin, comme Music Assistant, sur une carte son branchée à cet appareil."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:114
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:145
 msgid "Server"
 msgstr "Serveur"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:332
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:345
 msgid "Server address"
 msgstr "Adresse du serveur"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:272
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:278
 msgid "Settings"
 msgstr "Paramètres"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:86
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:91
 msgid "Show"
 msgstr "Afficher"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:234
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:239
 msgid "Shuffle"
 msgstr "Aléatoire"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:116
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:50
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:57
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:69
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:72
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:147
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:55
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:62
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:74
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:77
 msgid "State"
 msgstr "Lecture"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:348
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:361
 msgid "State directory"
 msgstr "Répertoire d’état"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:354
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:367
 msgid "Status"
 msgstr "État"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:203
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:208
 msgid "Stop"
 msgstr "Arrêt"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:349
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:362
 msgid "Stores the player's identity, pairings, volume, mute state and output delay. Use persistent storage: in RAM, this data is lost at each reboot and every server must pair again."
 msgstr "Contient l'identité du lecteur, ses appairages, son volume, l'état de la sourdine et le délai de sortie. Utilisez un stockage persistant : en RAM, ces données sont perdues à chaque redémarrage et chaque serveur doit s'appairer de nouveau."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:46
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:135
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:191
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:302
+msgid "Test tone (440 Hz)"
+msgstr "Tonalité d'essai (440 Hz)"
+
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:51
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:140
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:196
 msgid "The player refused the command: %s"
 msgstr "Le lecteur a refusé la commande : %s"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:74
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:79
 msgid "To pair, add this player in the server. The pairing code is displayed here when the server requests it."
 msgstr "Pour appairer ce lecteur, ajoutez-le dans le serveur. Le code d'appairage s'affiche ici lorsque le serveur le demande."
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:117
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:148
 msgid "Track"
 msgstr "Morceau"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:218
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:223
 msgid "Unmute"
 msgstr "Rétablir le son"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:345
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:358
 msgid "Verbose"
 msgstr "Détaillé"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:118
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/sendspin.js:149
 msgid "Volume"
 msgstr "Volume"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:342
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:355
 msgid "Warning"
 msgstr "Avertissement"
 
-#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:305
+#: applications/luci-app-sendspin/htdocs/luci-static/resources/view/sendspin.js:318
 msgid "opus is only accepted at 48000:16 with at most 2 channels"
 msgstr "opus n'est accepté qu'en 48000:16 avec au plus 2 canaux"
