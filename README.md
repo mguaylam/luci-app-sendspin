@@ -5,7 +5,7 @@ the Sendspin player packaged for OpenWrt in
 [mguaylam/openwrt-sendspin](https://github.com/mguaylam/openwrt-sendspin).
 
 > **Status: experimental.** Built and tested on a D-Link DIR-3040 running
-> OpenWrt 25.12.5, alongside the package it configures.
+> OpenWrt 25.12.6, alongside the package it configures.
 
 ## What it does
 
