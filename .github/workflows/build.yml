@@ -57,7 +57,7 @@ jobs:
       fail-fast: false
       matrix:
         release:
-          - 25.12.5
+          - 25.12.6
           - main
     steps:
       - uses: actions/checkout@v7

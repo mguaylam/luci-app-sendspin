@@ -5,7 +5,7 @@ the Sendspin player packaged for OpenWrt in
 [mguaylam/openwrt-sendspin](https://github.com/mguaylam/openwrt-sendspin).
 
 > **Status: experimental.** Built and tested on a D-Link DIR-3040 running
-> OpenWrt 25.12.5, alongside the package it configures.
+> OpenWrt 25.12.6, alongside the package it configures.
 
 ## What it does
 
@@ -80,7 +80,7 @@ unchanged apart from the `luci.mk` include in its Makefile.
 ## Continuous integration
 
 Every pull request checks the JavaScript, JSON and translation files, and
-builds the package with the OpenWrt SDK against 25.12.5 and the snapshot,
+builds the package with the OpenWrt SDK against 25.12.6 and the snapshot,
 with the `openwrt-sendspin` feed added for `sendspin-cli`.
 
 ## License
