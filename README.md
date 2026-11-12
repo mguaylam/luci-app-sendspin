@@ -13,8 +13,8 @@ Under *Services → Sendspin*:
 
 - **Status** of each player, refreshed every two seconds: whether it runs,
   the server it is connected to, whether that server is paired, playback
-  state, track, volume and output. The same summary appears on the
-  *Status → Overview* page.
+  state, track, volume, output and input, or that the input waits for its
+  capture device. The same summary appears on the *Status → Overview* page.
 - **Pairing.** Every connection is encrypted, and a server must pair with
   the player before it can play. When a server asks to pair with a code, a
   dialog opens with the code and a button to copy it, and closes when the
@@ -27,7 +27,9 @@ Under *Services → Sendspin*:
   player's group, through the server, and need write access in LuCI.
 - **Settings** for `/etc/config/sendspin-cli`: enabling the player, its name,
   the output device (playback devices found in `/proc/asound` are offered),
-  the preferred format, and under *Advanced Settings* the buffer, output
+  the input device streamed to the server as a line-in or microphone
+  (capture devices found there are offered, along with a test tone), the
+  preferred format, and under *Advanced Settings* the buffer, output
   delay, port, mDNS announcement, server address, unpaired access, log level
   and state directory. Saving restarts the player.
 

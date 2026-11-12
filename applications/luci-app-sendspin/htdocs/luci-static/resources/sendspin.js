@@ -25,6 +25,35 @@ function parseStatus(output) {
 	return info;
 }
 
+/* /proc/asound devices of one direction, "playback" or "capture" */
+function listDevices(direction) {
+	return Promise.all([
+		L.resolveDefault(fs.read('/proc/asound/cards'), ''),
+		L.resolveDefault(fs.read('/proc/asound/pcm'), '')
+	]).then(([ cards, pcms ]) => {
+		const cardNames = {};
+
+		/* each card is two lines, the second its long name: "Yichip USB-Audio at usb-..., full speed" */
+		for (const m of cards.matchAll(/^\s*(\d+)\s+\[[^\]]*\]:.*\n\s+(.+)$/gm))
+			cardNames[+m[1]] = m[2].replace(/ at .*$/, '').trim();
+
+		const devices = [];
+
+		/* "00-00: USB Audio : USB Audio : playback 1 : capture 1" */
+		for (const m of pcms.matchAll(/^(\d+)-(\d+):\s*([^:]*?)\s*:(.*)$/gm)) {
+			if (!m[4].includes(`: ${direction} `))
+				continue;
+
+			const card = +m[1], device = +m[2];
+			const card_name = cardNames[card] ?? _('Card %d').format(card);
+
+			devices.push([ `hw:${card},${device}`, `hw:${card},${device} (${card_name}, ${m[3]})` ]);
+		}
+
+		return devices;
+	});
+}
+
 return baseclass.extend({
 	/*
 	 * Resolves to one entry per player section: whether it is enabled and
@@ -43,6 +72,8 @@ return baseclass.extend({
 					name: s.name,
 					enabled: s.enabled == '1',
 					running: instances[s['.name']]?.running == true,
+					/* what the init script waits for, when the input had no device */
+					inputMissing: instances[s['.name']]?.data?.input_missing,
 					info: null
 				};
 
@@ -116,7 +147,8 @@ return baseclass.extend({
 			[ _('State'), info.state ],
 			[ _('Track'), info.track ],
 			[ _('Volume'), info['player volume'] ],
-			[ _('Output'), info.output ]
+			[ _('Output'), info.output ],
+			[ _('Input'), player.inputMissing ? _('No capture device, playing without it until one appears') : info.input ]
 		];
 
 		return rows.filter((row) => row[1] != null && row[1] !== '');
@@ -127,26 +159,11 @@ return baseclass.extend({
 	 * pairs; a hw: device is played without resampling.
 	 */
 	getPlaybackDevices() {
-		return Promise.all([
-			L.resolveDefault(fs.read('/proc/asound/cards'), ''),
-			L.resolveDefault(fs.read('/proc/asound/pcm'), '')
-		]).then(([ cards, pcms ]) => {
-			const cardNames = {};
+		return listDevices('playback');
+	},
 
-			/* each card is two lines, the second its long name: "Yichip USB-Audio at usb-..., full speed" */
-			for (const m of cards.matchAll(/^\s*(\d+)\s+\[[^\]]*\]:.*\n\s+(.+)$/gm))
-				cardNames[+m[1]] = m[2].replace(/ at .*$/, '').trim();
-
-			const devices = [];
-
-			for (const m of pcms.matchAll(/^(\d+)-(\d+):\s*([^:]*?)\s*:.*playback/gm)) {
-				const card = +m[1], device = +m[2];
-				const card_name = cardNames[card] ?? _('Card %d').format(card);
-
-				devices.push([ `hw:${card},${device}`, `hw:${card},${device} (${card_name}, ${m[3]})` ]);
-			}
-
-			return devices;
-		});
+	/* Capture devices from /proc/asound, as getPlaybackDevices() lists them */
+	getCaptureDevices() {
+		return listDevices('capture');
 	}
 });
